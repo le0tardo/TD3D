@@ -6,7 +6,7 @@ public class shooterScript : MonoBehaviour
     public GameObject target = null;
     public GameObject projectile;
     towerScript twrScr;
-    public float coolDown=1;
+    public float coolDown=1.0f;
 
     private void Start()
     {
@@ -45,11 +45,14 @@ public class shooterScript : MonoBehaviour
 
     void Fire()
     {
-        //if (target != null)
-        //{
-            Debug.Log("FIRE!!!");
-            //projectile.SetActive(true);
-        //}
+        if (target != null)
+        {
+            if (!projectile.activeSelf) 
+            {
+                Debug.Log("FIRE!!!");
+                projectile.SetActive(true); //projectile[i] set active!
+            }
+        }
     }
 
 }
