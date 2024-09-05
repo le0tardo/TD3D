@@ -19,31 +19,40 @@ public class towerScript : MonoBehaviour
 
     void FindTarget()
     {
-        //if (target == null) { 
+        if (target == null) { 
         
-        targets = GameObject.FindGameObjectsWithTag("enemy");
-        Debug.Log("Found " + targets.Length + " enemies");
+            targets = GameObject.FindGameObjectsWithTag("enemy");
+            //Debug.Log("Found " + targets.Length + " enemies");
 
-        if (targets.Length > 0) //there is alteast one enemy in the scene
-        {
-            for (int i = 0; i < targets.Length; i++)
+            if (targets.Length > 0)
             {
-                float dist = Vector3.Distance(transform.position, targets[i].transform.position);
-                if (dist <= towerRange)
+                target = null;
+                for (int i = 0; i < targets.Length; i++)
                 {
-                    target = targets[i];
-                    Debug.Log("Enemy within range!");
-                    break;
-                }
-                else
-                {
-                    target = null;
-                    Debug.Log("Enemy out of range");
+                    float dist = Vector3.Distance(transform.position, targets[i].transform.position);
+                    if (dist <= towerRange)
+                    {
+                        target = targets[i];
+                        //Debug.Log("Enemy within range!");
+                        break;
+                    }
+                    else
+                    {
+                        target = null;
+                        //Debug.Log("Enemy out of range");
+                    }
                 }
             }
         }
-        
-        //} //why wont target be null??
+        else //there is a target
+        {
+            float dist = Vector3.Distance(transform.position, target.transform.position);
+            if (dist > towerRange)
+            {
+                target = null;
+                //Debug.Log("Enemy out of range. Resetting target");
+            }
+        }
 
     }
 

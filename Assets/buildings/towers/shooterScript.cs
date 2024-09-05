@@ -1,22 +1,17 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class shooterScript : MonoBehaviour
 {
-    GameObject target = null;
+    public GameObject target = null;
+    public GameObject projectile;
     towerScript twrScr;
     public float coolDown=1;
 
     private void Start()
     {
         twrScr=GetComponentInParent<towerScript>();
-        if (twrScr != null )
-        {
-            Debug.Log("Found my tower!");
-        }
-        else
-        {
-            Debug.Log("no tower...");
-        }
+        InvokeRepeating("Fire", 0f, coolDown);
     }
 
     private void Update()
@@ -38,7 +33,7 @@ public class shooterScript : MonoBehaviour
             Vector3 rot = qRot.eulerAngles;
             transform.rotation = Quaternion.Euler(0f,rot.y,0f);
 
-            InvokeRepeating("Fire", 0f, coolDown);
+            //InvokeRepeating("Fire", 0f, coolDown);
         }
         else
         {
@@ -50,7 +45,11 @@ public class shooterScript : MonoBehaviour
 
     void Fire()
     {
-        Debug.Log("FIRE!!!");
+        //if (target != null)
+        //{
+            Debug.Log("FIRE!!!");
+            //projectile.SetActive(true);
+        //}
     }
 
 }
