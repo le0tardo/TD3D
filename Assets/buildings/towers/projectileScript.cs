@@ -6,7 +6,8 @@ public class projectileScript : MonoBehaviour
     Vector3 startPosition;
     public GameObject shooter;
     shooterScript shooterScr;
-    public float spd=5;
+    public float dmg;
+    public float spd;
 
     float progress;
 
@@ -21,10 +22,7 @@ public class projectileScript : MonoBehaviour
     {
         transform.localPosition = startPosition;
         progress = 0;
-        transform.rotation = Quaternion.Euler(0, 0, 0);
-        //Debug.Log("X: " + shooter.transform.rotation.x + ". Y:" + shooter.transform.rotation.y + ". Z:" + shooter.transform.rotation.z+".");
-        Debug.Log("Current Projectile Rotation: " + transform.rotation.eulerAngles);
-        Debug.Log("Current Shooter Rotation: " + shooter.transform.rotation.eulerAngles);
+        transform.rotation = shooter.transform.rotation;
 
         if (shooterScr.target != null)
         {
@@ -42,17 +40,18 @@ public class projectileScript : MonoBehaviour
 
     void Update()
     {
-
-        if (targetObj == null)
+        if (targetObj == null || !targetObj.activeSelf)
         {
             this.gameObject.SetActive(false);
         }
 
         if (isActiveAndEnabled)
         {
-            //transform.position = Vector3.MoveTowards(transform.position, targetObj.transform.position, spd * Time.deltaTime); //move straight towards.
+            //move straight towards
+            //transform.position = Vector3.MoveTowards(transform.position, targetObj.transform.position, spd * Time.deltaTime); .
 
-            if (progress < 1f) //move towards in an arc
+            //move towards in an arc
+            if (progress < 1f)
             {
                 float arcHeight = 1.5f;
 
@@ -65,14 +64,15 @@ public class projectileScript : MonoBehaviour
                 if (movementDirection != Vector3.zero)
                 {
                     Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
-                    //transform.rotation= targetRotation;
+                    transform.rotation= targetRotation;
                 }
             }
 
-            
             float dist = Vector3.Distance(transform.position, targetObj.transform.position);
-            if (dist < 0.5f)
+            if (dist < 0.25f)
             {
+                enemy_script targetScr= targetObj.GetComponent<enemy_script>();
+                targetScr.TakeDamage(dmg);
                 this.gameObject.SetActive(false);
             }
         }

@@ -12,17 +12,17 @@ public class towerScript : MonoBehaviour
     }
     void Update()
     {
-        
+        if(target!=null && !target.activeSelf)
+        {
+            target = null;
+        }
     }
-
-
 
     void FindTarget()
     {
         if (target == null) { 
-        
+      
             targets = GameObject.FindGameObjectsWithTag("enemy");
-            //Debug.Log("Found " + targets.Length + " enemies");
 
             if (targets.Length > 0)
             {
@@ -33,27 +33,28 @@ public class towerScript : MonoBehaviour
                     if (dist <= towerRange)
                     {
                         target = targets[i];
-                        //Debug.Log("Enemy within range!");
                         break;
                     }
                     else
                     {
                         target = null;
-                        //Debug.Log("Enemy out of range");
                     }
                 }
             }
         }
         else //there is a target
         {
-            float dist = Vector3.Distance(transform.position, target.transform.position);
-            if (dist > towerRange)
-            {
-                target = null;
-                //Debug.Log("Enemy out of range. Resetting target");
+            if (!target.activeSelf) { target = null; }
+            else//target is active
+            { 
+                float dist = Vector3.Distance(transform.position, target.transform.position);
+                if (dist > towerRange)
+                {
+                    target = null;
+                    //Debug.Log("Enemy out of range. Resetting target");
+                }
             }
         }
-
     }
 
     private void OnDrawGizmosSelected()

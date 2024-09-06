@@ -11,7 +11,9 @@ public class shooterScript : MonoBehaviour
     private void Start()
     {
         twrScr=GetComponentInParent<towerScript>();
-        InvokeRepeating("Fire", 0f, coolDown);
+
+        float randomDelay = Random.value;
+        InvokeRepeating("Fire", randomDelay, coolDown);
     }
 
     private void Update()
@@ -32,20 +34,16 @@ public class shooterScript : MonoBehaviour
             Quaternion qRot = Quaternion.LookRotation(dir);
             Vector3 rot = qRot.eulerAngles;
             transform.rotation = Quaternion.Euler(0f,rot.y,0f);
-
-            //InvokeRepeating("Fire", 0f, coolDown);
         }
         else
         {
-            //return to originalDirection?
+            //return to originalDirection? nah, looks fine
         }
-
- 
     }
 
     void Fire()
     {
-        if (target != null)
+        if (target != null && target.activeSelf)
         {
             if (!projectile.activeSelf) 
             {

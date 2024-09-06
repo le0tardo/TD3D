@@ -20,6 +20,8 @@ public class enemy_script : MonoBehaviour
     public bool psn = false;
     public bool frz = false;
     public bool brn = false;
+
+    bool isDead = false;
     void Start()
     {
         maxHp = hp;
@@ -35,6 +37,12 @@ public class enemy_script : MonoBehaviour
 
         if (hp == maxHp){hpBackg.enabled = false;hpBar.enabled = false; }
         else {hpBackg.enabled = true;hpBar.enabled = true; }
+
+        if(hp<=0 && isDead == false)
+        {
+            Die();
+            isDead = true;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -44,5 +52,25 @@ public class enemy_script : MonoBehaviour
             playerStats_script.playerHealth -= dmg;
             Destroy(this.gameObject);
         }
+    }
+
+    public void TakeDamage(float hitDmg)
+    {
+        hp -= hitDmg;
+        enemyColor_script clrScr=GetComponent<enemyColor_script>();
+        clrScr.FlashRed();
+    }
+
+    void Die()
+    {
+        enemyMovement_script moveScr=GetComponent<enemyMovement_script>();
+        moveScr.spd = 0;
+        Invoke("Recycle", 0.5f);
+    }
+    void Recycle()
+    {
+        //find spawn point
+        //warp to spawn
+        this.gameObject.SetActive(false);
     }
 }
