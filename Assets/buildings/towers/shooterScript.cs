@@ -47,7 +47,8 @@ public class shooterScript : MonoBehaviour
         {
             if (!projectile.activeSelf) 
             {
-                Debug.Log("FIRE!!!");
+                //Debug.Log("FIRE!!!");
+                //float random.range, <x, spawn missProjectile, else spawn projectile
                 projectile.SetActive(true); //projectile[i] set active!
             }
         }

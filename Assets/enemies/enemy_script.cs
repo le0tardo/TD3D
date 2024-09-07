@@ -25,6 +25,9 @@ public class enemy_script : MonoBehaviour
     void Start()
     {
         maxHp = hp;
+
+        float rOffset = Random.Range(-0.5f,0.5f);
+        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z+rOffset);
     }
 
     void Update()

@@ -51,6 +51,7 @@ public class towerScript : MonoBehaviour
                 if (dist > towerRange)
                 {
                     target = null;
+                    FindTarget();
                     //Debug.Log("Enemy out of range. Resetting target");
                 }
             }
