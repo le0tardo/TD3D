@@ -26,8 +26,10 @@ public class enemy_script : MonoBehaviour
     {
         maxHp = hp;
 
+        //random lane position and snap to ground road height
         float rOffset = Random.Range(-0.5f,0.5f);
         transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z+rOffset);
+        transform.position = new Vector3(transform.position.x, 0.7f, transform.position.z);
     }
 
     void Update()
