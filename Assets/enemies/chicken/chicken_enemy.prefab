@@ -249,7 +249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.541}
+  m_AnchoredPosition: {x: 0, y: 1.5}
   m_SizeDelta: {x: 5, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7646053512944487681
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 7325355321761303114}
   - component: {fileID: 5067820414303969117}
   m_Layer: 0
-  m_Name: peasant_enemy
+  m_Name: chicken_enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,6 +363,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8211020491613653322}
   - {fileID: 2262665529839885873}
   - {fileID: 1174746412298855629}
   m_Father: {fileID: 0}
@@ -455,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eddb3fcd9a90dd48bb09a6452025a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spd: 1.5
+  spd: 1
   pathIndex: 
 --- !u!114 &313627325795517703
 MonoBehaviour:
@@ -469,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8020b3cdc9237c488dbb63477754a2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyName: Peasant
+  enemyName: Chicken
   hp: 3
   maxHp: 0
   dmg: 1
@@ -650,6 +651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: capChap_mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2744e756fd1dfb748910dca191c21300,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -693,3 +699,124 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1795849052577724890}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8537099619638226593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6312991446913509981}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      propertyPath: m_Name
+      value: chickenEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dcbe9954b6df5f54d9d1f04672849392,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2872982180579839926}
+  m_SourcePrefab: {fileID: 100100000, guid: dcbe9954b6df5f54d9d1f04672849392, type: 3}
+--- !u!4 &8211020491613653322 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcbe9954b6df5f54d9d1f04672849392,
+    type: 3}
+  m_PrefabInstance: {fileID: 8537099619638226593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8843019141324837872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dcbe9954b6df5f54d9d1f04672849392,
+    type: 3}
+  m_PrefabInstance: {fileID: 8537099619638226593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2872982180579839926
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8843019141324837872}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7e884015ac02ab46b7a0806f6fe9137, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

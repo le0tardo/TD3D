@@ -13,13 +13,12 @@ public class enemyColor_script : MonoBehaviour
     void Start()
     {
         enemyRenderer=GetComponentInChildren<SkinnedMeshRenderer>();
-        originalColor = enemyRenderer.material.color;
+        if(enemyRenderer!=null)originalColor = enemyRenderer.material.color;
     }
 
     public void FlashRed()
     {
-        //Debug.Log("flashing red on hit");
-        StartCoroutine(FlashRedRoutine());
+        if (enemyRenderer != null) StartCoroutine(FlashRedRoutine());
     }
 
     private IEnumerator FlashRedRoutine()

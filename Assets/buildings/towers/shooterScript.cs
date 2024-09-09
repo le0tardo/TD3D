@@ -7,6 +7,7 @@ public class shooterScript : MonoBehaviour
     public GameObject projectile;
     towerScript twrScr;
     public float coolDown=1.0f;
+    Animator animator;
 
     private void Start()
     {
@@ -14,6 +15,9 @@ public class shooterScript : MonoBehaviour
 
         float randomDelay = Random.value;
         InvokeRepeating("Fire", randomDelay, coolDown);
+
+        animator=GetComponentInChildren<Animator>();
+        if (animator != null) { animator.Play("idle", 0, 0); }
     }
 
     private void Update()
@@ -50,6 +54,17 @@ public class shooterScript : MonoBehaviour
                 //Debug.Log("FIRE!!!");
                 //float random.range, <x, spawn missProjectile, else spawn projectile
                 projectile.SetActive(true); //projectile[i] set active!
+
+
+                //animator.SetBool("atk", true);
+                if (animator != null) { animator.Play("atk", 0, 0); }
+            }
+        }
+        else
+        {
+            if (animator != null) {
+                //animator.SetBool("atk", false);
+                animator.Play("idle");
             }
         }
     }
