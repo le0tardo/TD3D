@@ -2212,79 +2212,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1001 &178844274
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6409912710769268276, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_Name
-      value: peasant_enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6409912710769268276, guid: 2119ddcbf01acf14db76d32317dad5a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2119ddcbf01acf14db76d32317dad5a5, type: 3}
 --- !u!1001 &179874082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23251,79 +23178,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1613139768}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1614783589
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.5793295
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.49999952
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.0888388
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6409912710769268276, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_Name
-      value: chicken_enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6409912710769268276, guid: a7357708b42cc6c4aaa637305d9d60ef,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a7357708b42cc6c4aaa637305d9d60ef, type: 3}
 --- !u!1001 &1615954097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25172,11 +25026,11 @@ MonoBehaviour:
   state: 2
   waves:
   - waveName: three peasants
-    enemy: {fileID: 6312991446913509981, guid: 2119ddcbf01acf14db76d32317dad5a5, type: 3}
+    enemy: {fileID: 6312991446913509981, guid: ef4a4c848f67d8e47a31273336511d3e, type: 3}
     count: 3
     rate: 1.8
   - waveName: five chickens
-    enemy: {fileID: 6312991446913509981, guid: a7357708b42cc6c4aaa637305d9d60ef, type: 3}
+    enemy: {fileID: 6312991446913509981, guid: ef4a4c848f67d8e47a31273336511d3e, type: 3}
     count: 5
     rate: 1
   waveDelay: 5
@@ -31542,8 +31396,6 @@ SceneRoots:
   - {fileID: 1936883781881887209}
   - {fileID: 1628575787}
   - {fileID: 1724157889}
-  - {fileID: 178844274}
   - {fileID: 1818652685}
   - {fileID: 1613139768}
   - {fileID: 1273126365}
-  - {fileID: 1614783589}

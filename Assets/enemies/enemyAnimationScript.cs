@@ -4,14 +4,19 @@ public class enemyAnimationScript : MonoBehaviour
 {
     Animator animator;
     enemy_script enmScr;
+    enemyMovement_script enmMoveScr;
     bool isDead=false;
 
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
-        enmScr=GetComponent<enemy_script>();
+        enmScr = GetComponent<enemy_script>();
+        enmMoveScr = GetComponent<enemyMovement_script>();
 
-        int d = Random.Range(0, 2);
+        animator.speed = enmMoveScr.spd;
+        if (animator.speed < 1){animator.speed = 1;}
+
+        int d = Random.Range(1, 5);
         animator.SetInteger("death",d);
         RandomStartFrame();
     }
