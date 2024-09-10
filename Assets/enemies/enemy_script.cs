@@ -76,6 +76,8 @@ public class enemy_script : MonoBehaviour
     {
         //find spawn point
         //warp to spawn
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
+        playerStats_script.playerGold += gold;
+        Destroy(this.gameObject);
     }
 }
