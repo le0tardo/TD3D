@@ -51,20 +51,26 @@ public class shooterScript : MonoBehaviour
         {
             if (!projectile.activeSelf) 
             {
-                //Debug.Log("FIRE!!!");
-                //float random.range, <x, spawn missProjectile, else spawn projectile
                 projectile.SetActive(true); //projectile[i] set active!
 
-
-                //animator.SetBool("atk", true);
                 if (animator != null) { animator.Play("atk", 0, 0); }
             }
         }
         else
         {
             if (animator != null) {
-                //animator.SetBool("atk", false);
                 animator.Play("idle");
+            }
+        }
+    }
+
+    void AttackEvent() //call from animation event?
+    {
+        if (target != null && target.activeSelf)
+        {
+            if (!projectile.activeSelf)
+            {
+                projectile.SetActive(true);
             }
         }
     }
