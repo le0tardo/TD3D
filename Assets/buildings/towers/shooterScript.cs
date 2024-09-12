@@ -51,7 +51,7 @@ public class shooterScript : MonoBehaviour
         {
             if (!projectile.activeSelf) 
             {
-                projectile.SetActive(true); //projectile[i] set active!
+                projectile.SetActive(true); //projectile[i] set active for more
 
                 if (animator != null) { animator.Play("atk", 0, 0); }
             }

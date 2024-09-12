@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bb7664b8edc4bbb41a994954a3c59c52
+guid: 62e28092b3e8cd848953a1fe35a873ff
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: d632e8ce9a5d8454e88965f625aa7499, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: atlas
-    second: {fileID: 2100000, guid: 493ea70e93a55174eb50d16ff3c5407a, type: 2}
+      name: towerPawn
+    second: {fileID: 2100000, guid: 7d0d823b97e8a6d49b3037ef1d55eb44, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,11 +36,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: archer_idle
-      takeName: capChap_rig|capChap_archer_idle
-      internalID: -1267574004061498574
+      name: archerPawn_attack
+      takeName: pawnRig|archerPawn_attack5
+      internalID: -4597122107111277864
       firstFrame: 0
-      lastFrame: 49
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -70,11 +65,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: archer_shoot
-      takeName: capChap_rig|capChap_archer_shoot_oneSec_firstShot.001
-      internalID: 7661389402339990309
+      name: archerPawn_idle
+      takeName: pawnRig|archerPawn_idle
+      internalID: -8866860907967854831
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -101,7 +96,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.25
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -156,7 +151,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.25
+    globalScale: 0.1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
