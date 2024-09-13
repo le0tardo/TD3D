@@ -17,7 +17,8 @@ public class shooterScript : MonoBehaviour
         InvokeRepeating("Fire", randomDelay, coolDown);
 
         animator=GetComponentInChildren<Animator>();
-        if (animator != null) { animator.Play("idle", 0, 0); }
+        float randomFrame = Random.value;
+        if (animator != null) { animator.Play("idle", 0, randomFrame); }
     }
 
     private void Update()

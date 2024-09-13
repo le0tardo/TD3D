@@ -21,13 +21,14 @@ public class enemy_script : MonoBehaviour
     public bool frz = false;
     public bool brn = false;
 
+    public GameObject killPuff;
     bool isDead = false;
     void Start()
     {
         maxHp = hp;
 
         //random lane position and snap to ground road height
-        float rOffset = Random.Range(-0.5f,0.5f);
+        float rOffset = Random.Range(-0.33f,0.33f);
         transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z+rOffset);
         transform.position = new Vector3(transform.position.x, 0.7f, transform.position.z);
     }
@@ -70,13 +71,14 @@ public class enemy_script : MonoBehaviour
     {
         enemyMovement_script moveScr=GetComponent<enemyMovement_script>();
         moveScr.spd = 0;
-        Invoke("Recycle", 0.5f);
+        Invoke("Recycle", 0.3f);
     }
     void Recycle()
     {
         //find spawn point
         //warp to spawn
         //this.gameObject.SetActive(false);
+        if (killPuff != null) { Instantiate(killPuff, transform.position, Quaternion.identity); }
         playerStats_script.playerGold += gold;
         Destroy(this.gameObject);
     }
