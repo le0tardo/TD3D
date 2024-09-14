@@ -497,6 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyRenderer: {fileID: 0}
   flashDuration: 0.2
+  prop: {fileID: 0}
 --- !u!114 &4844142313884518799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +524,7 @@ GameObject:
   - component: {fileID: 6500087623860531749}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: enemyRayCast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,6 +774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemyPawn_0h_base
       objectReference: {fileID: 0}
+    - target: {fileID: 8889931540119507177, guid: 2593ca05dd800a743849fc9b07df41a0,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 098627792778e224284e20449472567e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -10,10 +10,20 @@ public class enemyColor_script : MonoBehaviour
     private Color poisonColor = new Color(1.17f,1.7f,0.36f);
     public float flashDuration = 0.02f;
 
+    public GameObject prop;
+    private MeshRenderer propRenderer;
+    private Color propOriginalColor;
+
     void Start()
     {
         enemyRenderer=GetComponentInChildren<SkinnedMeshRenderer>();
         if(enemyRenderer!=null)originalColor = enemyRenderer.material.color;
+
+        if (prop != null)
+        {
+            propRenderer = prop.GetComponent<MeshRenderer>();
+            propOriginalColor = propRenderer.material.color;
+        }
     }
 
     public void FlashRed()
@@ -24,7 +34,11 @@ public class enemyColor_script : MonoBehaviour
     private IEnumerator FlashRedRoutine()
     {
         enemyRenderer.material.color = hitColor/1.5f;
+        if (prop != null) { propRenderer.material.color = hitColor/1.5f;}
+
         yield return new WaitForSeconds(flashDuration);
+
         enemyRenderer.material.color = originalColor;
+        if (prop != null) { propRenderer.material.color = propOriginalColor;}
     }
 }

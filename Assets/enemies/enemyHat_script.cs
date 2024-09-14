@@ -7,7 +7,7 @@ public class enemyHat_script : MonoBehaviour
 
     private void Start()
     {
-        n=Random.Range(0,hats.Length-1);
+        n=Random.Range(0,hats.Length);
         hats[n].SetActive(true);
     }
 }

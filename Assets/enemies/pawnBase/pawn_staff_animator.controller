@@ -45,7 +45,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 5610426854212518565, guid: d6433cc2a366175499fbf4baf6bd6d46,
+  m_Motion: {fileID: 5610426854212518565, guid: eb66fb8b94f83cf45b7644a253e383eb,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -97,7 +97,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -996379293418307166, guid: d6433cc2a366175499fbf4baf6bd6d46,
+  m_Motion: {fileID: -996379293418307166, guid: eb66fb8b94f83cf45b7644a253e383eb,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -135,7 +135,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: farmer_animator
+  m_Name: pawn_staff_animator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isDead
@@ -220,7 +220,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -4586671685681324428, guid: d6433cc2a366175499fbf4baf6bd6d46,
+  m_Motion: {fileID: -4586671685681324428, guid: eb66fb8b94f83cf45b7644a253e383eb,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -247,7 +247,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -517207058234971004, guid: d6433cc2a366175499fbf4baf6bd6d46,
+  m_Motion: {fileID: -517207058234971004, guid: eb66fb8b94f83cf45b7644a253e383eb,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -355,7 +355,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 696703731793211628, guid: d6433cc2a366175499fbf4baf6bd6d46, type: 3}
+  m_Motion: {fileID: 8976215605179138600, guid: eb66fb8b94f83cf45b7644a253e383eb,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
