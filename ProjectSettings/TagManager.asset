@@ -8,6 +8,7 @@ TagManager:
   - endPoint
   - enemy
   - enemyRayCast
+  - towerBlock
   layers:
   - Default
   - TransparentFX

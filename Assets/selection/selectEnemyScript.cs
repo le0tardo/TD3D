@@ -19,12 +19,10 @@ public class selectEnemyScript : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("enemyRayCast"))
                 {
                     selectedEnemy = hitObject.transform.parent.gameObject;
-                    Debug.Log("Selected enemy: " + selectedEnemy.name);
                 }
                 else
                 {
                     selectedEnemy = null;
-                    Debug.Log("Deselected enemy");
                 }
             }
         }
