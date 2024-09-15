@@ -55,7 +55,10 @@ public class enemy_script : MonoBehaviour
     {
         if (other.CompareTag("endPoint"))
         {
-            playerStats_script.playerHealth -= dmg;
+            //playerStats_script.playerHealth -= dmg;
+            GameObject endPoint = other.gameObject;
+            pathEnd_script endScr=endPoint.GetComponent<pathEnd_script>();
+            endScr.TakeDamage(dmg);
             Destroy(this.gameObject);
         }
     }
