@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b2a1ec180154a8747b5ee6fc8a297e65
+guid: ce8f31391f8996649a3cbb388516f7f7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: atlas
-    second: {fileID: 2100000, guid: 493ea70e93a55174eb50d16ff3c5407a, type: 2}
+      name: wizM
+    second: {fileID: 2100000, guid: eed35d0a6a4d0204dba705130b877729, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -21,8 +21,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -57,7 +55,7 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4

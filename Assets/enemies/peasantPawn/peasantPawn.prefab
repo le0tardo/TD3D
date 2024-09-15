@@ -457,10 +457,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: Peasant
-  hp: 3
+  hp: 8
   maxHp: 0
   dmg: 1
-  gold: 1
+  gold: 3
   hpText: {fileID: 2235110279252981662}
   hpBackg: {fileID: 1267968131087331834}
   hpBar: {fileID: 7752577588793562303}

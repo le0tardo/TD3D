@@ -488,10 +488,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyName: Farmer
-  hp: 5
+  hp: 12
   maxHp: 0
   dmg: 1
-  gold: 2
+  gold: 5
   hpText: {fileID: 2235110279252981662}
   hpBackg: {fileID: 1267968131087331834}
   hpBar: {fileID: 7752577588793562303}
