@@ -22,6 +22,8 @@ public class spawnScript : MonoBehaviour
 
     private float searchCountDown = 1.0f;
 
+    public GameObject WinHUD;
+
     private void Start()
     {
         waveCountDown = waveDelay;
@@ -63,8 +65,8 @@ public class spawnScript : MonoBehaviour
         if (nextWave + 1 > waves.Length - 1)//the last wave
         {
             nextWave = 0;
-            Debug.Log("LEVEL COMPLETE!");
-            //instantiate win HUD
+            //Debug.Log("LEVEL COMPLETE!");
+            WinHUD.SetActive(true);
             this.gameObject.SetActive(false);
         }
         else

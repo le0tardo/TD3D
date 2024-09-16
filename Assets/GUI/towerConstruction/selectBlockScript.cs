@@ -1,16 +1,21 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class selectBlockScript : MonoBehaviour
 {
     public GameObject selectedTowerBlock;
     public GameObject towerBlockMarker;
+    public GameObject towerBuildBox;
+
+    Animator boxAnimator;
+    bool boxUp=false;
     void Start()
     {
-        
+        boxAnimator=towerBuildBox.GetComponent<Animator>();
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)&&!IsPointerOverUI())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -26,19 +31,21 @@ public class selectBlockScript : MonoBehaviour
                     if (selectedTowerBlock == clickedTowerBlock)
                     {
                         selectedTowerBlock = null; //already selected
+                        TowerBlockUnselected();
                     }
                     else
                     {
                         selectedTowerBlock = clickedTowerBlock;
+                        TowerBlockSelected();
                     }
                 }
                 else
                 {
                     selectedTowerBlock = null;
+                    TowerBlockUnselected();
                 }
             }
         }
-
 
         if (selectedTowerBlock != null)
         {
@@ -47,6 +54,28 @@ public class selectBlockScript : MonoBehaviour
         else
         {
             towerBlockMarker.transform.position=Vector3.zero;
+        }
+    }
+
+    bool IsPointerOverUI()
+    {
+        return EventSystem.current.IsPointerOverGameObject();
+    }
+
+    void TowerBlockSelected()
+    {
+        if (!boxUp) 
+        { 
+            boxAnimator.Play("slideUp",0,0);
+            boxUp = true;
+        }
+    }
+    public void TowerBlockUnselected()
+    {
+        if (boxUp)
+        { 
+            boxAnimator.Play("slideDown", 0, 0);
+            boxUp = false;
         }
     }
 }

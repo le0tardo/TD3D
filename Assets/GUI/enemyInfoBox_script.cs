@@ -41,11 +41,11 @@ public class enemyInfoBox_script : MonoBehaviour
 
     public void SlideUp()
     {
-        animator.Play("slideUp", 0, 0);
+        //animator.Play("slideUp", 0, 0);
 
     }
     public void SlideDown()
     {
-        animator.Play("slideDown", 0, 0);
+        //animator.Play("slideDown", 0, 0);
     }
 }

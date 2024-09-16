@@ -7,11 +7,13 @@ public class selectEnemyScript : MonoBehaviour
     public GameObject enemyMarker;
     public GameObject enemyInfoBox;
     enemyInfoBox_script infoBoxScr;
+    Animator boxAnimator;
+    bool boxUp = false;
 
     private void Start()
     {
         infoBoxScr = enemyInfoBox.GetComponent<enemyInfoBox_script>();
-        enemyInfoBox.SetActive(false);
+        boxAnimator = enemyInfoBox.GetComponent<Animator>();
     }
     private void Update()
     {
@@ -23,7 +25,6 @@ public class selectEnemyScript : MonoBehaviour
         {
             if (enemyMarker.transform.position != Vector3.zero)
             {
-                infoBoxScr.SlideDown();
                 enemyMarker.transform.position = Vector3.zero;
             }
         }
@@ -39,17 +40,16 @@ public class selectEnemyScript : MonoBehaviour
 
                 if (hit.collider.gameObject.CompareTag("enemyRayCast"))
                 {
-                    enemyInfoBox.SetActive(true);
 
                     if (hitObject != lastSelectedEnemy) { 
                         selectedEnemy = hitObject.transform.parent.gameObject;
-                        infoBoxScr.SlideUp();
+                        EnemySelected();
                         GetEnemyInfo(selectedEnemy);
                         lastSelectedEnemy = hitObject;
                     }
                     else
                     {
-                        infoBoxScr.SlideDown();
+                        EnemyUnselected();
                         selectedEnemy = null;
                         lastSelectedEnemy=null;
                     }
@@ -58,7 +58,7 @@ public class selectEnemyScript : MonoBehaviour
                 {
                     if (lastSelectedEnemy!=null && lastSelectedEnemy.CompareTag("enemyRayCast"))
                     {
-                        infoBoxScr.SlideDown();
+                        EnemyUnselected();
                     }
 
                     selectedEnemy = null;
@@ -81,8 +81,20 @@ public class selectEnemyScript : MonoBehaviour
 
     }
 
-    void SendEnemyInfo()
+    void EnemySelected()
     {
-
+        if (!boxUp)
+        {
+            boxAnimator.Play("slideUp", 0, 0);
+            boxUp = true;
+        }
+    }
+    void EnemyUnselected()
+    {
+        if (boxUp)
+        {
+            boxAnimator.Play("slideDown",0,0);
+            boxUp = false;
+        }
     }
 }
