@@ -11,6 +11,7 @@ public class enemy_script : MonoBehaviour
     public float maxHp;
     public float dmg = 1;
     public float gold = 1;
+    public Sprite portrait;
 
     public TextMeshProUGUI hpText;
     public Image hpBackg;

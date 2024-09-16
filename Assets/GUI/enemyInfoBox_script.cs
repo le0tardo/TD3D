@@ -1,46 +1,44 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class enemyInfoBox_script : MonoBehaviour
 {
-    public GameObject gameMasterObj;
-    selectEnemyScript selectScript;
     Animator animator;
-    GameObject lastSelectedEnemy=null;
-    enemy_script enmScr=null;
+
+    public string enemyInfoName;
+    public string enemyInfo_hp;
+    public string enemyInfoMaxHp;
+    public string enemyInfoSpd;
+
+    public GameObject SelectedEnemy;
+    enemy_script SelectedEnemyScript;
+    int CurrentHP;
+
+    [SerializeField] TMP_Text nameText;
+    [SerializeField] TMP_Text hpText;
+    [SerializeField] TMP_Text spdText;
+    [SerializeField] Image portraitImg;
+
     void Start()
     {
-        selectScript = gameMasterObj.GetComponent<selectEnemyScript>();
         animator = GetComponent<Animator>();
     }
 
-    private void Update() ////move all this to click function on selectEnemyScript!!!
+    private void Update()
     {
-        if (selectScript.selectedEnemy != null)
+        if (SelectedEnemy != null)
         {
-            GetEnemyInfo();
-            return;
+            SelectedEnemyScript=SelectedEnemy.GetComponent<enemy_script>();
+            CurrentHP=Mathf.RoundToInt(SelectedEnemyScript.hp);
+            portraitImg.sprite = SelectedEnemyScript.portrait;
         }
 
-
-        if (selectScript.selectedEnemy != lastSelectedEnemy)
-        { 
-            if (selectScript.selectedEnemy != null)
-            {
-                SlideUp();
-            }
-            else
-            {
-                SlideDown();
-            }
-            lastSelectedEnemy = selectScript.selectedEnemy;
-        }
+        nameText.text = enemyInfoName;
+        hpText.text = "HP: "+CurrentHP+"/"+enemyInfoMaxHp;
+        spdText.text = "SPD: "+enemyInfoSpd;
     }
 
-    void GetEnemyInfo()
-    {
-        enmScr = selectScript.selectedEnemy.GetComponent<enemy_script>();
-        Debug.Log("Selected enemy is a " + enmScr.enemyName);
-    }
     public void SlideUp()
     {
         animator.Play("slideUp", 0, 0);
