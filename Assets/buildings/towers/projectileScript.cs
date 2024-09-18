@@ -13,11 +13,12 @@ public class projectileScript : MonoBehaviour
     float dmg;
     public float spd;
 
-    public bool psn=false;
-    public bool frz=false;
-    public bool brn= false;
+    public int psn=0;
+    public int frz=0;
+    public int brn= 0;
 
     float progress;
+    public GameObject hitFX;
 
     void Awake()
     {
@@ -101,6 +102,11 @@ public class projectileScript : MonoBehaviour
                     targetScr.TakeDamage(dmg);
 
                     //targetScr.freeze or burn or whtever
+                    if (hitFX != null)
+                    {
+                        hitFX_script hitScr = hitFX.GetComponent<hitFX_script>();
+                        hitScr.Hit(transform.position);
+                    }
 
                     this.gameObject.SetActive(false);
                 }
