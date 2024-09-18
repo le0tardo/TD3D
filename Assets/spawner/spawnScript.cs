@@ -10,7 +10,7 @@ public class spawnScript : MonoBehaviour
     public class Wave
     {
         public string waveName;
-        public Transform enemy;
+        public Transform enemy; //[] here?
         public int count;
         public float rate;
     }
@@ -27,6 +27,7 @@ public class spawnScript : MonoBehaviour
     private void Start()
     {
         waveCountDown = waveDelay;
+        playerStats_script.waves = waves.Length;
     }
 
     private void Update()
@@ -72,6 +73,7 @@ public class spawnScript : MonoBehaviour
         else
         {
             nextWave++;
+            //playerStats_script.currentWave++;
             return;
         }
     }
@@ -91,8 +93,8 @@ public class spawnScript : MonoBehaviour
 
     IEnumerator SpawnWave(Wave _wave)
     {
-        //Debug.Log("spawning wave "+_wave.waveName);
-        state= spawnState.spawning;
+        playerStats_script.currentWave++;
+        state = spawnState.spawning;
 
         for (int i = 0; i < _wave.count; i++)
         {
