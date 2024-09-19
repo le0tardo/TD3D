@@ -3,12 +3,19 @@ using UnityEngine;
 public class towerScript : MonoBehaviour
 {
     public string towerName;
-    public float towerRange;
+    public int towerRange;
+
+    public string towerDesc;
+    public string towerStatRange;
+    public string towerStatSpeed;
+    public string towerStatAttack;
+
     public GameObject[] targets;
     public GameObject target=null;
     void Start()
     {
         InvokeRepeating("FindTarget",0f,0.5f);
+
     }
     void Update()
     {
@@ -58,6 +65,10 @@ public class towerScript : MonoBehaviour
         }
     }
 
+    void GetStats()
+    {
+
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
