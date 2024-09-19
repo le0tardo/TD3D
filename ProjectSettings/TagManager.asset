@@ -9,6 +9,7 @@ TagManager:
   - enemy
   - enemyRayCast
   - towerBlock
+  - towerRayCast
   layers:
   - Default
   - TransparentFX

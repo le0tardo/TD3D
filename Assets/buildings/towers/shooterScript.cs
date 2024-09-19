@@ -7,13 +7,15 @@ public class shooterScript : MonoBehaviour
     public GameObject projectile; //make array
     public GameObject[] projectiles;
     towerScript twrScr;
-    public float spd = 1.0f;
+    public float spd;
     public bool atk=false;
     Animator animator;
 
     private void Start()
     {
         twrScr=GetComponentInParent<towerScript>();
+
+        spd=twrScr.towerStatSpeed;
 
         animator=GetComponentInChildren<Animator>();
         float randomFrame = Random.value;

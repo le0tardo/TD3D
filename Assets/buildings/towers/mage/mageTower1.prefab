@@ -46,8 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooter: {fileID: 2900321365861912306}
-  minDmg: 8
-  maxDmg: 12
+  dmg: 0
   spd: 5
   psn: 0
   frz: 0
@@ -506,8 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooter: {fileID: 2900321365861912306}
-  minDmg: 8
-  maxDmg: 12
+  dmg: 0
   spd: 5
   psn: 0
   frz: 0
@@ -636,9 +634,10 @@ GameObject:
   - component: {fileID: 5356826693863041645}
   - component: {fileID: 5866762088621609236}
   - component: {fileID: 2611365725805021916}
+  - component: {fileID: 1932818165843713160}
   m_Layer: 0
   m_Name: mageTower1
-  m_TagString: Untagged
+  m_TagString: towerRayCast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -679,8 +678,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58502d0ff09007c488e06d043363e0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerName: ArcherTower1
+  towerName: Mage Tower
+  towerType: 1
+  towerLevel: 1
+  towerDesc: A mage wizard guy.
   towerRange: 4
+  towerStatAttack: 10
+  towerStatSpeed: 1
+  tower_psn: 0
+  tower_frz: 0
+  tower_brn: 0
   targets: []
   target: {fileID: 0}
 --- !u!95 &2611365725805021916
@@ -705,6 +712,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1932818165843713160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441262293316885178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.015, z: 0.01}
+  m_Center: {x: 0, y: 0.008, z: 0}
 --- !u!1 &7810178930184958685
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,8 +1012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooter: {fileID: 2900321365861912306}
-  minDmg: 8
-  maxDmg: 12
+  dmg: 0
   spd: 5
   psn: 0
   frz: 0

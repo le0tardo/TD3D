@@ -7,11 +7,10 @@ public class projectileScript : MonoBehaviour
     Vector3 startPosition;
     public GameObject shooter;
     shooterScript shooterScr;
+    towerScript towerScr;
 
-    public float minDmg=1;
-    public float maxDmg=1;
-    float dmg;
-    public float spd;
+    public int dmg;
+    public float spd; //not attack speed!
 
     public int psn=0;
     public int frz=0;
@@ -23,6 +22,9 @@ public class projectileScript : MonoBehaviour
     void Awake()
     {
         shooterScr = shooter.GetComponent<shooterScript>();
+        towerScr = shooter.GetComponentInParent<towerScript>();
+        dmg = towerScr.towerStatAttack;
+
         startPosition = transform.position;
         this.gameObject.SetActive(false);
         targetPosition= new Vector3(0, 0, 0);
@@ -97,7 +99,6 @@ public class projectileScript : MonoBehaviour
                 float dist = Vector3.Distance(transform.position, targetObj.transform.position);
                 if (dist < 0.1f)
                 {
-                    dmg =Random.Range(minDmg,maxDmg);
                     enemy_script targetScr = targetObj.GetComponent<enemy_script>();
                     targetScr.TakeDamage(dmg);
 

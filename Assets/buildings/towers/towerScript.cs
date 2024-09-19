@@ -1,21 +1,32 @@
 using UnityEngine;
 
+public enum towerType
+{
+    Archer,
+    Mage,
+    Gadget
+}
+
 public class towerScript : MonoBehaviour
 {
     public string towerName;
-    public int towerRange;
-
+    public towerType towerType;
+    public int towerLevel;
     public string towerDesc;
-    public string towerStatRange;
-    public string towerStatSpeed;
-    public string towerStatAttack;
+
+    public float towerRange;
+    public int towerStatAttack;
+    public float towerStatSpeed;
+
+    public int tower_psn = 0;
+    public int tower_frz = 0;
+    public int tower_brn = 0;
 
     public GameObject[] targets;
     public GameObject target=null;
     void Start()
     {
         InvokeRepeating("FindTarget",0f,0.5f);
-
     }
     void Update()
     {
@@ -65,10 +76,6 @@ public class towerScript : MonoBehaviour
         }
     }
 
-    void GetStats()
-    {
-
-    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
