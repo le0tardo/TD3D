@@ -22,17 +22,30 @@ public class towerScript : MonoBehaviour
     public int tower_frz = 0;
     public int tower_brn = 0;
 
+    public GameObject rangeMarker;
+    public bool drawRange = false;
+
     public GameObject[] targets;
     public GameObject target=null;
     void Start()
     {
         InvokeRepeating("FindTarget",0f,0.5f);
+        rangeMarker.transform.localScale = new Vector3(towerRange, towerRange, 1f);
     }
     void Update()
     {
         if(target!=null && !target.activeSelf)
         {
             target = null;
+        }
+
+        if (drawRange)
+        {
+            rangeMarker.SetActive(true);
+        }
+        else
+        {
+            rangeMarker.SetActive(false);
         }
     }
 

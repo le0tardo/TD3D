@@ -17,6 +17,10 @@ public class rangeDraw_script : MonoBehaviour
 
     void DrawCircle(int steps, float radius)
     {
-
+        circleLine.positionCount=steps;
+        for (int i=0; i<steps; i++)
+        {
+            float circumference = (float)i / steps;
+        }
     }
 }
