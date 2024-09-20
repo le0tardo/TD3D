@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class towerBlock_script : MonoBehaviour
 {
-    public GameObject marker;
-    void Start()
+    BoxCollider triggerBox;
+
+    private void Start()
     {
-        
+        triggerBox = GetComponentInChildren<BoxCollider>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Occupy()
     {
-        
+        triggerBox.enabled = false;
+    }
+    public void Clear()
+    {
+        triggerBox.enabled=true;
     }
 }

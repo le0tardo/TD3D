@@ -1,13 +1,18 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class selectTower_script : MonoBehaviour
 {
     public GameObject selectedTower;
+    public GameObject towerInfoBox;
+    Animator boxAnimator;
     towerScript twrScr;
+
+    bool boxUp = false;
     void Start()
     {
-        
+        boxAnimator = towerInfoBox.GetComponent<Animator>();
     }
 
     void Update()
@@ -57,14 +62,25 @@ public class selectTower_script : MonoBehaviour
         {
             twrScr.drawRange = false;
         }
+        if (boxUp)
+        {
+            boxAnimator.Play("slideDown", 0, 0);
+            boxUp = false;
+        }
+
     }
     void TowerSelected()
     {
         if (twrScr != null)
         {
             twrScr.drawRange = true;
+            Debug.Log("Selected tower is "+twrScr.towerStatObj.towerName);
         }
-
+        if (!boxUp)
+        {
+            boxAnimator.Play("slideUp", 0, 0);
+            boxUp = true;
+        }
     }
 
 }

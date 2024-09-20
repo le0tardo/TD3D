@@ -23,7 +23,7 @@ public class projectileScript : MonoBehaviour
     {
         shooterScr = shooter.GetComponent<shooterScript>();
         towerScr = shooter.GetComponentInParent<towerScript>();
-        dmg = towerScr.towerStatAttack;
+        dmg = Mathf.RoundToInt(towerScr.towerDamage);
 
         startPosition = transform.position;
         this.gameObject.SetActive(false);
@@ -32,6 +32,7 @@ public class projectileScript : MonoBehaviour
 
     private void OnEnable()
     {
+        dmg = Mathf.RoundToInt(towerScr.towerDamage);
         transform.localPosition = startPosition;
         progress = 0;
         transform.rotation = shooter.transform.rotation;

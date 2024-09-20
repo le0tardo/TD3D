@@ -679,17 +679,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58502d0ff09007c488e06d043363e0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerStatObj: {fileID: 11400000, guid: 567bc168c345b644391c637eb291437d, type: 2}
   towerName: Mage Tower
   towerType: 1
   towerLevel: 1
   towerDesc: A mage wizard guy.
   towerRange: 4
-  towerStatAttack: 10
-  towerStatSpeed: 1
+  towerDamage: 0
+  towerSpeed: 0
   tower_psn: 0
   tower_frz: 0
   tower_brn: 0
   rangeMarker: {fileID: 2804596525117529579}
+  drawRange: 0
   targets: []
   target: {fileID: 0}
 --- !u!95 &2611365725805021916

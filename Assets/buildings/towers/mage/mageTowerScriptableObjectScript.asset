@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: archer_towerScriptableObjectScript
+  m_Name: mageTowerScriptableObjectScript
   m_EditorClassIdentifier: 
-  towerName: Archer Tower
+  towerName: Mage Tower
   towerLevel: 1
-  towerType: 0
-  towerDescription: A tower that has an archer.
-  towerCost: 12
-  towerDamage: 3
+  towerType: 1
+  towerDescription: Magic goes brrr
+  towerCost: 18
+  towerDamage: 10
   towerSpeed: 1
-  towerBaseSpeed: 0
-  towerRange: 5
+  towerBaseSpeed: 1
+  towerRange: 4
   frz: 0
   psn: 0
   brn: 0
-  towerIcon: {fileID: 21300000, guid: 3685109017241004c91b4b70ef1d5a82, type: 3}
+  towerIcon: {fileID: 21300000, guid: 02779243e679b0e42bb3208f0ca3a335, type: 3}

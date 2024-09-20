@@ -66,6 +66,11 @@ public class selectEnemyScript : MonoBehaviour
                 }
             }
         }
+        if (selectedEnemy == null&&boxUp)
+        {
+            EnemyUnselected();
+            return;
+        }
     }
 
     void GetEnemyInfo(GameObject clickedObj)

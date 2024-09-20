@@ -600,17 +600,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58502d0ff09007c488e06d043363e0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerName: 'ArcherTower '
+  towerStatObj: {fileID: 11400000, guid: dfb0682b66bd1174dabcc918951c4f1c, type: 2}
+  towerName: default
   towerType: 0
-  towerLevel: 1
-  towerDesc: 'A tower with an arhcer on top. He can shoot yo. '
-  towerRange: 5
-  towerStatAttack: 3
-  towerStatSpeed: 1
+  towerLevel: 0
+  towerDesc: Desc
+  towerRange: 0
+  towerDamage: 0
+  towerSpeed: 0
   tower_psn: 0
   tower_frz: 0
   tower_brn: 0
   rangeMarker: {fileID: 7519123545842756561}
+  drawRange: 0
   targets: []
   target: {fileID: 0}
 --- !u!95 &6312182600336503650

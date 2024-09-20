@@ -15,7 +15,7 @@ public class shooterScript : MonoBehaviour
     {
         twrScr=GetComponentInParent<towerScript>();
 
-        spd=twrScr.towerStatSpeed;
+        spd=twrScr.towerSpeed;
 
         animator=GetComponentInChildren<Animator>();
         float randomFrame = Random.value;

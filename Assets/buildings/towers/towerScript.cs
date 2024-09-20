@@ -1,26 +1,22 @@
 using UnityEngine;
 
-public enum towerType
-{
-    Archer,
-    Mage,
-    Gadget
-}
 
 public class towerScript : MonoBehaviour
 {
+    public towerScriptableObjectScript towerStatObj;
+
     public string towerName;
     public towerType towerType;
     public int towerLevel;
     public string towerDesc;
 
     public float towerRange;
-    public int towerStatAttack;
-    public float towerStatSpeed;
+    public float towerDamage;
+    public float towerSpeed;
 
-    public int tower_psn = 0;
-    public int tower_frz = 0;
-    public int tower_brn = 0;
+    public float tower_psn;
+    public float tower_frz;
+    public float tower_brn;
 
     public GameObject rangeMarker;
     public bool drawRange = false;
@@ -30,7 +26,8 @@ public class towerScript : MonoBehaviour
     void Start()
     {
         InvokeRepeating("FindTarget",0f,0.5f);
-        rangeMarker.transform.localScale = new Vector3(towerRange, towerRange, 1f);
+        SetStats();
+
     }
     void Update()
     {
@@ -89,6 +86,22 @@ public class towerScript : MonoBehaviour
         }
     }
 
+    void SetStats()
+    {
+        towerName = towerStatObj.towerName;
+        towerType = towerStatObj.towerType;
+        towerLevel = towerStatObj.towerLevel;
+        towerDesc = towerStatObj.towerDescription;
+        towerRange = towerStatObj.towerRange;
+        towerDamage = towerStatObj.towerDamage;
+        towerSpeed = towerStatObj.towerSpeed;
+
+        tower_frz = towerStatObj.frz;
+        tower_psn = towerStatObj.psn;
+        tower_brn = towerStatObj.brn;
+
+        rangeMarker.transform.localScale = new Vector3(towerRange, towerRange, 1f);
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
