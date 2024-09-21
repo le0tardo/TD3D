@@ -6,6 +6,7 @@ public class selectTower_script : MonoBehaviour
 {
     public GameObject selectedTower;
     public GameObject towerInfoBox;
+    towerInfoBox_script twrInfoScr;
     Animator boxAnimator;
     towerScript twrScr;
 
@@ -13,6 +14,7 @@ public class selectTower_script : MonoBehaviour
     void Start()
     {
         boxAnimator = towerInfoBox.GetComponent<Animator>();
+        twrInfoScr=towerInfoBox.GetComponent<towerInfoBox_script>();
     }
 
     void Update()
@@ -40,6 +42,8 @@ public class selectTower_script : MonoBehaviour
                         TowerUnselected(); //unselect previous
                         selectedTower = clickedTower;
                         twrScr = clickedTower.GetComponent<towerScript>();
+                        twrInfoScr = towerInfoBox.GetComponent<towerInfoBox_script>();
+                        twrInfoScr.selectedTower = selectedTower;
                         TowerSelected();
                     }
                 }
@@ -56,7 +60,7 @@ public class selectTower_script : MonoBehaviour
         return EventSystem.current.IsPointerOverGameObject();
     }
 
-    void TowerUnselected()
+    public void TowerUnselected()
     {
         if (twrScr != null)
         {
@@ -74,7 +78,6 @@ public class selectTower_script : MonoBehaviour
         if (twrScr != null)
         {
             twrScr.drawRange = true;
-            Debug.Log("Selected tower is "+twrScr.towerStatObj.towerName);
         }
         if (!boxUp)
         {

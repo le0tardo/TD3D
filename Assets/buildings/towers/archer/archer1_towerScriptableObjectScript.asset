@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: archer_towerScriptableObjectScript
+  m_Name: archer1_towerScriptableObjectScript
   m_EditorClassIdentifier: 
   towerName: Archer Tower
   towerLevel: 1
@@ -19,9 +19,13 @@ MonoBehaviour:
   towerCost: 12
   towerDamage: 3
   towerSpeed: 1
-  towerBaseSpeed: 0
+  towerBaseSpeed: 4
   towerRange: 5
   frz: 0
   psn: 0
   brn: 0
   towerIcon: {fileID: 21300000, guid: 3685109017241004c91b4b70ef1d5a82, type: 3}
+  upgradeTower: {fileID: 11400000, guid: 5277537a8751714429a98f0600ae08c5, type: 2}
+  upgradeTowerObj: {fileID: 7441262293316885178, guid: 91acbd0c9d38fd447af1c525177a76ef,
+    type: 3}
+  upgradeCost: 28

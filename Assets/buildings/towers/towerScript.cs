@@ -23,7 +23,7 @@ public class towerScript : MonoBehaviour
 
     public GameObject[] targets;
     public GameObject target=null;
-    void Start()
+    void Awake()
     {
         InvokeRepeating("FindTarget",0f,0.5f);
         SetStats();

@@ -14,7 +14,6 @@ public class shooterScript : MonoBehaviour
     private void Start()
     {
         twrScr=GetComponentInParent<towerScript>();
-
         spd=twrScr.towerSpeed;
 
         animator=GetComponentInChildren<Animator>();

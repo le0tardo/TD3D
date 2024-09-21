@@ -2,9 +2,9 @@ using UnityEngine;
 
 public enum towerType
 {
-    Archer, //Marksmen
-    Mage,
-    Gadget, //Machines
+    Archer, //Marksman
+    Mage,	//Magicial
+    Gadget, //Machine, Mechanical
     Gizmo
 }
 
@@ -27,4 +27,7 @@ public class towerScriptableObjectScript : ScriptableObject
 	public float brn;
 
 	public Sprite towerIcon;
+	public towerScriptableObjectScript upgradeTower;
+	public GameObject upgradeTowerObj;
+	public float upgradeCost;
 }
