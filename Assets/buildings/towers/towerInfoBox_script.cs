@@ -38,7 +38,12 @@ public class towerInfoBox_script : MonoBehaviour
     {
         if (selectedTower != null)
         {
-            Instantiate(twrScr.towerStatObj.upgradeTowerObj,selectedTower.transform.position,Quaternion.identity);
+            GameObject upgTower= Instantiate(twrScr.towerStatObj.upgradeTowerObj,selectedTower.transform.position,Quaternion.identity);
+            towerScript upgTwrScr=upgTower.GetComponent<towerScript>();
+            towerScript currTwrScr = selectedTower.GetComponent<towerScript>();
+            upgTwrScr.groundBlock = currTwrScr.groundBlock;
+            Debug.Log(upgTwrScr.groundBlock.name);
+
             Destroy(selectedTower);
 
             selectTower_script selTwrScr=gameMasterObj.GetComponent<selectTower_script>();
@@ -51,6 +56,7 @@ public class towerInfoBox_script : MonoBehaviour
     {
         if (selectedTower != null)
         {
+            Debug.Log("this never happens?!");
             playerStats_script.playerGold += Mathf.RoundToInt(twrScr.towerStatObj.towerCost/2);
             Destroy(selectedTower);
             selectTower_script selTwrScr = gameMasterObj.GetComponent<selectTower_script>();

@@ -23,11 +23,12 @@ public class towerScript : MonoBehaviour
 
     public GameObject[] targets;
     public GameObject target=null;
+
+    public GameObject groundBlock;
     void Awake()
     {
         InvokeRepeating("FindTarget",0f,0.5f);
         SetStats();
-
     }
     void Update()
     {
@@ -102,9 +103,13 @@ public class towerScript : MonoBehaviour
 
         rangeMarker.transform.localScale = new Vector3(towerRange, towerRange, 1f);
     }
-    private void OnDrawGizmosSelected()
+
+    public void ClearTowerBlock()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position,towerRange);
+        if (groundBlock != null)
+        {
+            towerBlock_script twrBlockScr=groundBlock.GetComponent<towerBlock_script>();
+            twrBlockScr.Clear();
+        }
     }
 }
