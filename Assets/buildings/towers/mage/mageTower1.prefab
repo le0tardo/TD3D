@@ -48,6 +48,7 @@ MonoBehaviour:
   shooter: {fileID: 2900321365861912306}
   dmg: 0
   spd: 5
+  magic: 1
   psn: 0
   frz: 0
   brn: 0
@@ -507,6 +508,7 @@ MonoBehaviour:
   shooter: {fileID: 2900321365861912306}
   dmg: 0
   spd: 5
+  magic: 1
   psn: 0
   frz: 0
   brn: 0
@@ -694,6 +696,7 @@ MonoBehaviour:
   drawRange: 0
   targets: []
   target: {fileID: 0}
+  groundBlock: {fileID: 0}
 --- !u!95 &2611365725805021916
 Animator:
   serializedVersion: 7
@@ -1018,6 +1021,7 @@ MonoBehaviour:
   shooter: {fileID: 2900321365861912306}
   dmg: 0
   spd: 5
+  magic: 1
   psn: 0
   frz: 0
   brn: 0

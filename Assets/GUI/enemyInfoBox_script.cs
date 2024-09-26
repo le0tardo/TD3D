@@ -16,6 +16,10 @@ public class enemyInfoBox_script : MonoBehaviour
     [SerializeField] TMP_Text nameText;
     [SerializeField] TMP_Text hpText;
     [SerializeField] TMP_Text spdText;
+    [SerializeField] TMP_Text dmgText;
+    [SerializeField] TMP_Text armorText;
+    [SerializeField] TMP_Text resistText;
+    [SerializeField] TMP_Text goldText;
     [SerializeField] Image portraitImg;
 
 
@@ -27,8 +31,12 @@ public class enemyInfoBox_script : MonoBehaviour
             CurrentHP=Mathf.RoundToInt(SelectedEnemyScript.hp);
             portraitImg.sprite = SelectedEnemyScript.portrait;
             nameText.text = enemyInfoName;
-            hpText.text = "HP: " + CurrentHP + "/" + enemyInfoMaxHp;
-            spdText.text = "SPD: " + enemyInfoSpd;
+            hpText.text = "HP:   " + CurrentHP + "/" + enemyInfoMaxHp;
+            spdText.text = "SPD:     " + enemyInfoSpd;
+            dmgText.text = "DMG:  " + SelectedEnemyScript.dmg;
+            armorText.text = "Armor:   " + SelectedEnemyScript.armor;
+            resistText.text="Resist:     "+SelectedEnemyScript.resist;
+            goldText.text = "Gold:    " + SelectedEnemyScript.gold;
         }
 
     }

@@ -12,6 +12,8 @@ public class projectileScript : MonoBehaviour
     public int dmg;
     public float spd; //not attack speed!
 
+    public bool magic=false;
+
     public int psn=0;
     public int frz=0;
     public int brn= 0;
@@ -101,7 +103,16 @@ public class projectileScript : MonoBehaviour
                 if (dist < 0.1f)
                 {
                     enemy_script targetScr = targetObj.GetComponent<enemy_script>();
-                    targetScr.TakeDamage(dmg);
+
+                    if (magic)
+                    {
+                        targetScr.TakeMagicDamage(dmg);
+                    }
+                    else
+                    {
+                        targetScr.TakeDamage(dmg);
+                    }
+
 
                     //targetScr.freeze or burn or whtever
                     if (hitFX != null)

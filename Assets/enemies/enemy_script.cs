@@ -9,6 +9,8 @@ public class enemy_script : MonoBehaviour
     public string enemyName="Default Enemy";
     public float hp = 1;
     public float maxHp;
+    public float armor;
+    public float resist;
     public float dmg = 1;
     public float gold = 1;
     public Sprite portrait;
@@ -66,8 +68,17 @@ public class enemy_script : MonoBehaviour
 
     public void TakeDamage(float hitDmg)
     {
-        hp -= hitDmg;
+        hitDmg -= armor;
+        if (hitDmg > 0) { hp -= hitDmg; }
         enemyColor_script clrScr=GetComponent<enemyColor_script>();
+        clrScr.FlashRed();
+    }
+
+    public void TakeMagicDamage(float hitDmg)
+    {
+        hitDmg -= resist;
+        if (hitDmg > 0) { hp -= hitDmg; }
+        enemyColor_script clrScr = GetComponent<enemyColor_script>();
         clrScr.FlashRed();
     }
 
