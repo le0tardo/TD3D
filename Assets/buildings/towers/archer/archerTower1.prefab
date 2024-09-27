@@ -48,6 +48,7 @@ MonoBehaviour:
   shooter: {fileID: 2900321365861912306}
   dmg: 3
   spd: 8
+  magic: 0
   psn: 0
   frz: 0
   brn: 0
@@ -265,6 +266,7 @@ MonoBehaviour:
   shooter: {fileID: 2900321365861912306}
   dmg: 3
   spd: 8
+  magic: 0
   psn: 0
   frz: 0
   brn: 0
@@ -541,6 +543,7 @@ MonoBehaviour:
   shooter: {fileID: 2900321365861912306}
   dmg: 3
   spd: 8
+  magic: 0
   psn: 0
   frz: 0
   brn: 0
@@ -1082,6 +1085,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: rangeProjector
       objectReference: {fileID: 0}
+    - target: {fileID: 664455879174043163, guid: db57edf35aa35bb46b3b849dae88725c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1279564016591678001, guid: db57edf35aa35bb46b3b849dae88725c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1147,6 +1155,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6102426517716942663, guid: db57edf35aa35bb46b3b849dae88725c,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: c77c7d527aad5e9478fb02a1f372ceb1, type: 2}
     - target: {fileID: 6102426517716942663, guid: db57edf35aa35bb46b3b849dae88725c,
         type: 3}
       propertyPath: m_ScaleMode

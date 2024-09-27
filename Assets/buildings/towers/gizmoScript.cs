@@ -29,6 +29,11 @@ public class gizmoScript : MonoBehaviour
         FindTowers();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //if towers.!contains(other.gameobject), add to list
+    }
+
     public void FindTowers()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, range);
