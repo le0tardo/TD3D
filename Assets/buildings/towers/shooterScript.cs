@@ -56,6 +56,7 @@ public class shooterScript : MonoBehaviour
                 atk = false;
             }
         }
+        spd = twrScr.towerSpeed;
     }
 
     void Fire()

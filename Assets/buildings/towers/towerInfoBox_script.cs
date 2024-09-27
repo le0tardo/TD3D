@@ -42,7 +42,7 @@ public class towerInfoBox_script : MonoBehaviour
             towerScript upgTwrScr=upgTower.GetComponent<towerScript>();
             towerScript currTwrScr = selectedTower.GetComponent<towerScript>();
             upgTwrScr.groundBlock = currTwrScr.groundBlock;
-            Debug.Log(upgTwrScr.groundBlock.name);
+            //Debug.Log(upgTwrScr.groundBlock.name);
 
             Destroy(selectedTower);
 
