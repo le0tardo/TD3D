@@ -25,54 +25,18 @@ public class gizmoScript : MonoBehaviour
     {
         twrScr = GetComponent<towerScript>();
         range = twrScr.towerRange;
-
-        FindTowers();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void AddToList(GameObject towerToAdd)
     {
-        //if towers.!contains(other.gameobject), add to list
+        towers.Add(towerToAdd);
+        ApplyBuff(towerToAdd);
     }
 
-    public void FindTowers()
+    void ApplyBuff(GameObject towerToBuff)
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, range);
-
-        foreach (Collider collider in colliders)
-        {
-            if (collider.CompareTag("towerRayCast"))
-            {
-                towerScript twrToAddScr=collider.gameObject.GetComponent<towerScript>();
-                if (twrToAddScr.towerType != towerType.Gizmo)
-                { 
-                 towers.Add(collider.gameObject);
-                }
-            }
-        }
-        if (towers.Count > 0)
-        {
-            ApplyBuff();
-        }
-    }
-
-    public void ApplyBuff()
-    {
-        foreach (GameObject tower in towers)
-        {
-            towerScript towerToBuffScr = tower.GetComponent<towerScript>();
-
-            if (buffSpeed > 0){towerToBuffScr.towerSpeed += buffSpeed;}
-            if (buffBrn > 0){towerToBuffScr.tower_brn += buffBrn;Debug.Log("added "+buffBrn+" BRN to "+towerToBuffScr.towerName); }
-
-            if (buffDamage > 0) { if (towerToBuffScr.towerType != towerType.Mage) { towerToBuffScr.towerDamage += buffDamage; }}
-
-        }
-    }
-
-    public void ApplyBuffRun()
-    {
-        //apply buff to towers that are not yet on the list?
-        //or just call this, add to list if !contains, and applyBuff to that?
+        towerScript towerToBuffScr = towerToBuff.GetComponent<towerScript>();
+        if (buffSpeed > 0) { towerToBuffScr.towerSpeed += buffSpeed;}
     }
 
     public void RemoveBuff()
@@ -81,10 +45,9 @@ public class gizmoScript : MonoBehaviour
         {
             if (tower != null)
             { 
-            towerScript towerToBuffScr = tower.GetComponent<towerScript>();
+                towerScript towerToBuffScr = tower.GetComponent<towerScript>();
 
-            if (buffSpeed > 0) { towerToBuffScr.towerSpeed -= buffSpeed; }
-            if (buffBrn > 0) { towerToBuffScr.tower_brn -= buffBrn; Debug.Log("removed " + buffBrn + "BRN from " + towerToBuffScr.towerName); }
+                if (buffSpeed > 0) { towerToBuffScr.towerSpeed -= buffSpeed; }
 
             }
         }
@@ -99,7 +62,7 @@ public class gizmoScript : MonoBehaviour
     }
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, 3);
+        //Gizmos.color = Color.green;
+        //Gizmos.DrawWireSphere(transform.position, 3);
     }
 }
