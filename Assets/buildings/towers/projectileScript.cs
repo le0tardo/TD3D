@@ -13,6 +13,7 @@ public class projectileScript : MonoBehaviour
     public float spd; //not attack speed!
 
     public bool magic=false;
+    public bool aoe = false;
 
     public int psn=0;
     public int frz=0;
@@ -20,6 +21,7 @@ public class projectileScript : MonoBehaviour
 
     float progress;
     public GameObject hitFX;
+    public GameObject aoeFX;
 
     void Awake()
     {
@@ -105,12 +107,24 @@ public class projectileScript : MonoBehaviour
                     enemy_script targetScr = targetObj.GetComponent<enemy_script>();
 
                     if (magic)
-                    {
+                    { 
+                        //aoe magic? lightning etc..
                         targetScr.TakeMagicDamage(dmg);
                     }
                     else
                     {
-                        targetScr.TakeDamage(dmg);
+                        if (!aoe)
+                        { 
+                            targetScr.TakeDamage(dmg);
+                        }
+                        else
+                        {//deal AOE
+                            if (aoeFX != null)
+                            {    
+                                aoeFX.transform.position =targetObj.transform.position;
+                                aoeFX.SetActive(true);
+                            }
+                        }
                     }
 
 

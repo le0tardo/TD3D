@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
+  m_Name: canonTower_lvl1
+  m_EditorClassIdentifier: 
+  towerName: Canon
+  towerLevel: 1
+  towerType: 2
+  towerDescription: baller
+  towerCost: 1
+  towerDamage: 0
+  towerSpeed: 1
+  towerBaseSpeed: 2
+  towerRange: 3
+  frz: 0
+  psn: 0
+  brn: 0
+  towerIcon: {fileID: 21300000, guid: fa8225ea1bf102041a50f31e63bb1822, type: 3}
+  upgradeTower: {fileID: 0}
+  upgradeTowerObj: {fileID: 0}
+  upgradeCost: 1
