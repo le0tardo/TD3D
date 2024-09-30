@@ -57,6 +57,8 @@ public class projectileScript : MonoBehaviour
 
     void Update()
     {
+        #region//old way!
+        /*
         if (targetObj == null || !targetObj.activeSelf)
         {
             //get backup vecotr posiiotn if enemy dies before impact. Move to that instead.
@@ -140,7 +142,65 @@ public class projectileScript : MonoBehaviour
                         hitFX_script hitScr = hitFX.GetComponent<hitFX_script>();
                         hitScr.Hit(transform.position);
                     }
+                    Debug.Log("deactivated bcause of near target pos!");
+                    this.gameObject.SetActive(false);
+                }
+            }
+        }
+        */
+        #endregion
 
+        if (targetObj != null)
+        {
+            targetPosition = targetObj.transform.position;
+        }
+
+        if (progress < 1f) //move towards targetPosition in an arc
+        {
+            float arcHeight = 1.5f;
+            progress += Time.deltaTime * spd / Vector3.Distance(startPosition, targetPosition);
+            Vector3 lerpPosition = Vector3.Lerp(startPosition, targetPosition, progress);
+            Vector3 upwardsDirection = Vector3.up * Mathf.Sin(Mathf.PI * progress) * arcHeight;
+            transform.position = lerpPosition + upwardsDirection;
+            Vector3 movementDirection = (transform.position - startPosition).normalized;
+
+            if (movementDirection != Vector3.zero)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(movementDirection);
+                transform.rotation = targetRotation;
+            }
+        }
+
+        float dist = Vector3.Distance(transform.position, targetPosition);
+        if (dist < 0.1f)
+        {
+
+            if (!aoe)
+            {
+                if (targetObj != null)
+                {
+                    enemy_script targetObjScr = targetObj.GetComponent<enemy_script>();
+                    if (magic) { targetObjScr.TakeMagicDamage(dmg); }
+                    else { targetObjScr.TakeDamage(dmg); }
+
+                    if (hitFX != null)
+                    {
+                        hitFX_script hitScr = hitFX.GetComponent<hitFX_script>();
+                        hitScr.Hit(transform.position);
+                    }
+                    this.gameObject.SetActive(false);
+                }
+                else
+                {
+                    this.gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                if (aoeFX != null)
+                {
+                    aoeFX.transform.position = targetPosition;
+                    aoeFX.SetActive(true);
                     this.gameObject.SetActive(false);
                 }
             }

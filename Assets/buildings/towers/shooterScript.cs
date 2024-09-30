@@ -42,8 +42,6 @@ public class shooterScript : MonoBehaviour
             //rotate towards target
             Vector3 dir=target.transform.position-transform.position;
             Quaternion qRot = Quaternion.LookRotation(dir);
-            //Vector3 rot = qRot.eulerAngles;
-            //transform.rotation = Quaternion.Euler(0f,rot.y,0f);
             Quaternion smoothedRotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, qRot.eulerAngles.y, 0f), Time.deltaTime * 5);
             transform.rotation = smoothedRotation;
 
@@ -57,8 +55,12 @@ public class shooterScript : MonoBehaviour
         {
             if (atk)
             {
-                StopFire();
-                atk = false;
+                AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+                if (stateInfo.normalizedTime >= 1.0f)
+                { 
+                    StopFire();
+                    atk = false;
+                }
             }
         }
         spd = twrScr.towerSpeed;
