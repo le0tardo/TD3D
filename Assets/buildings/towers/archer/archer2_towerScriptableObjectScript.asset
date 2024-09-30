@@ -25,3 +25,7 @@ MonoBehaviour:
   psn: 0
   brn: 0
   towerIcon: {fileID: 21300000, guid: 3685109017241004c91b4b70ef1d5a82, type: 3}
+  upgradeTower: {fileID: 11400000, guid: 8f7594350ba85c74692f086dcf5b9826, type: 2}
+  upgradeTowerObj: {fileID: 7441262293316885178, guid: 09a1efd0ca63790458334da4311fb8cb,
+    type: 3}
+  upgradeCost: 52

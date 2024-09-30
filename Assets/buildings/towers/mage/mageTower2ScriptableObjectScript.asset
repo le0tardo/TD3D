@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: canonTower_lvl1
+  m_Name: mageTower2ScriptableObjectScript
   m_EditorClassIdentifier: 
-  towerName: Canon
-  towerLevel: 1
-  towerType: 2
-  towerDescription: baller
-  towerCost: 16
-  towerDamage: 3
+  towerName: Mage Tower
+  towerLevel: 2
+  towerType: 1
+  towerDescription: Magic goes brrr
+  towerCost: 36
+  towerDamage: 14
   towerSpeed: 1
-  towerBaseSpeed: 2
-  towerRange: 3
+  towerBaseSpeed: 1
+  towerRange: 4
   frz: 0
   psn: 0
   brn: 0
-  towerIcon: {fileID: 21300000, guid: edaf53dafd62d2047aff3ca8f403358e, type: 3}
+  towerIcon: {fileID: 21300000, guid: 02779243e679b0e42bb3208f0ca3a335, type: 3}
   upgradeTower: {fileID: 0}
   upgradeTowerObj: {fileID: 0}
-  upgradeCost: 1
+  upgradeCost: 64

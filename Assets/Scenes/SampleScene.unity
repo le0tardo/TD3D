@@ -1669,6 +1669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1743,6 +1748,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f78ce803d10ede41adef23c76dc77a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1754,6 +1764,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 92113829}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &93011414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 93011415}
+  - component: {fileID: 93011417}
+  - component: {fileID: 93011416}
+  m_Layer: 0
+  m_Name: towerIco
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &93011415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93011414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.44395602, y: 0.44395602, z: 0.44395602}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1367475855}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.4, y: 2.5}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &93011416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93011414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: edaf53dafd62d2047aff3ca8f403358e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &93011417
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93011414}
+  m_CullTransparentMesh: 1
 --- !u!1001 &103478656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2904,6 +2989,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3654,6 +3744,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4282,6 +4377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8145,89 +8245,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!1001 &415194344
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3060930954115874990, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3060930954115874990, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3060930954115874990, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5356826693863041645, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441262293316885178, guid: 3d672423e3f598242a5956a4ae79d6e8,
-        type: 3}
-      propertyPath: m_Name
-      value: canonTower_lvl1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d672423e3f598242a5956a4ae79d6e8, type: 3}
 --- !u!1001 &421066050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10002,6 +10019,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11678,7 +11700,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.9, y: -53.41298}
+  m_AnchoredPosition: {x: 158.30052, y: -53.41298}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &581931590
@@ -11939,6 +11961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12538,6 +12565,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12686,6 +12718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15887,6 +15924,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16123,7 +16165,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -16207,6 +16249,7 @@ MonoBehaviour:
   upgCost: {fileID: 1980216678}
   towerInfoBox: {fileID: 350566643}
   cantBuyBox: {fileID: 719731928}
+  costBox: {fileID: 1638746469}
 --- !u!1 &775492460
 GameObject:
   m_ObjectHideFlags: 0
@@ -16304,6 +16347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f78ce803d10ede41adef23c76dc77a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16677,6 +16725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17449,6 +17502,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17559,6 +17617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17632,6 +17695,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2b7811742a29fa4c836291405ad895a,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18713,6 +18781,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 890127902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &892252899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892252900}
+  - component: {fileID: 892252902}
+  - component: {fileID: 892252901}
+  m_Layer: 0
+  m_Name: cantBuy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &892252900
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892252899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1367475855}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &892252901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892252899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 211860383, guid: 6761825063843cd429e7e65b48df4907, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &892252902
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892252899}
+  m_CullTransparentMesh: 1
 --- !u!1001 &893053677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19003,6 +19146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19172,6 +19320,83 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 902774870}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &911796123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911796124}
+  - component: {fileID: 911796126}
+  - component: {fileID: 911796125}
+  m_Layer: 0
+  m_Name: costBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &911796124
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911796123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.66, y: 0.66, z: 0.66}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 942513680}
+  - {fileID: 997293197}
+  m_Father: {fileID: 1367475855}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 50.1, y: -35.751}
+  m_SizeDelta: {x: 138.5561, y: 56.994}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &911796125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911796123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 211860383, guid: 6761825063843cd429e7e65b48df4907, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &911796126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911796123}
+  m_CullTransparentMesh: 1
 --- !u!1001 &913432931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19519,6 +19744,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59586af90189cc946a9514486ba4a90b, type: 3}
+--- !u!1 &942513679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942513680}
+  - component: {fileID: 942513682}
+  - component: {fileID: 942513681}
+  m_Layer: 0
+  m_Name: costIco
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &942513680
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942513679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6340358, y: 0.6340358, z: 0.6340358}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911796124}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -36.7, y: -0.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &942513681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942513679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 40fe02ae897a55a4d9b32e8c2519b34e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &942513682
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942513679}
+  m_CullTransparentMesh: 1
 --- !u!1 &942889921
 GameObject:
   m_ObjectHideFlags: 0
@@ -20071,6 +20371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20707,6 +21012,143 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2536623457685903454}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &997293196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997293197}
+  - component: {fileID: 997293199}
+  - component: {fileID: 997293198}
+  m_Layer: 0
+  m_Name: costText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &997293197
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997293196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911796124}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27.6, y: -0.7}
+  m_SizeDelta: {x: 68.678, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &997293198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997293196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 00
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 64f4207728dbc6e40aa809aa5e6f2816, type: 2}
+  m_sharedMaterial: {fileID: 2638432745175935544, guid: 64f4207728dbc6e40aa809aa5e6f2816,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 44
+  m_fontSizeBase: 44
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -0.00004385201, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &997293199
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997293196}
+  m_CullTransparentMesh: 1
 --- !u!4 &1005034100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6573972735318006286, guid: 59586af90189cc946a9514486ba4a90b,
@@ -20935,6 +21377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f78ce803d10ede41adef23c76dc77a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21809,6 +22256,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22538,6 +22990,7 @@ RectTransform:
   - {fileID: 1616737257}
   - {fileID: 723511458}
   - {fileID: 581931589}
+  - {fileID: 1367475855}
   - {fileID: 1417565908}
   - {fileID: 151353881}
   - {fileID: 1775768147}
@@ -23211,6 +23664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: road_end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa5a825959ac169488096deb4e2dd83b,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24131,6 +24589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24325,6 +24788,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25505,6 +25973,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26191,6 +26664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26883,6 +27361,160 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1366833662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1367475854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367475855}
+  - component: {fileID: 1367475859}
+  - component: {fileID: 1367475858}
+  - component: {fileID: 1367475857}
+  - component: {fileID: 1367475856}
+  m_Layer: 0
+  m_Name: spawnButton_canon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1367475855
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367475854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7026735, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 93011415}
+  - {fileID: 892252900}
+  - {fileID: 911796124}
+  m_Father: {fileID: 1074060786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260.7005, y: -53.41298}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1367475856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367475854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1367475857}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1367475859}
+        m_TargetAssemblyTypeName: towerDragButton_script, Assembly-CSharp
+        m_MethodName: ClickedMe
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1367475857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367475854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 211860383, guid: 6761825063843cd429e7e65b48df4907, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1367475858
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367475854}
+  m_CullTransparentMesh: 1
+--- !u!114 &1367475859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367475854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae293e8fde0b7949a0cdb48517939cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower: {fileID: 11400000, guid: b1f8601fe5697b04ca203ed6ee4564d1, type: 2}
+  towerToSpawn: {fileID: 7441262293316885178, guid: 3d672423e3f598242a5956a4ae79d6e8,
+    type: 3}
+  gameMasterObj: {fileID: 1628575786}
+  cost: {fileID: 997293198}
+  cantBuyBox: {fileID: 892252899}
 --- !u!1001 &1367867133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33148,7 +33780,7 @@ GameObject:
   - component: {fileID: 1635848312}
   - component: {fileID: 1635848311}
   m_Layer: 0
-  m_Name: towerIco
+  m_Name: upgIco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33161,13 +33793,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635848309}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.5751, y: 0.5751, z: 0.5751}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770599924}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000013113, y: 5.5142}
@@ -33193,7 +33825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aa0b35e3edebece478fff038df0c1fa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 278dc5c296092bf4396b89627effd4e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34181,6 +34813,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f78ce803d10ede41adef23c76dc77a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34483,6 +35120,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34868,6 +35510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35298,7 +35945,7 @@ MonoBehaviour:
   waves:
   - waveName: cluster
     enemy: {fileID: 6312991446913509981, guid: 0f3e4b61437c47b4fb332e38f277b530, type: 3}
-    count: 5
+    count: 9
     rate: 3
   - waveName: stampede
     enemy: {fileID: 6312991446913509981, guid: 0f3e4b61437c47b4fb332e38f277b530, type: 3}
@@ -36028,6 +36675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37292,7 +37944,7 @@ GameObject:
   - component: {fileID: 1851678103}
   - component: {fileID: 1851678102}
   m_Layer: 0
-  m_Name: towerIco
+  m_Name: sellIco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37305,13 +37957,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851678100}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1992772150}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000013113, y: 5.5142}
@@ -37337,7 +37989,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aa0b35e3edebece478fff038df0c1fa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2d42508085a5c641896e6ee9e1b3c56, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38511,6 +39163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39633,6 +40290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: road_end
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa5a825959ac169488096deb4e2dd83b,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40757,6 +41419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roadCube1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42772,6 +43439,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadCube1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbd9bf2278f6314e93f87c30fcd1650,
+        type: 3}
+      propertyPath: m_TagString
+      value: roadBlock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44366,4 +45038,3 @@ SceneRoots:
   - {fileID: 962621701}
   - {fileID: 1376919935}
   - {fileID: 18058918}
-  - {fileID: 415194344}

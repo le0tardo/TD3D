@@ -120,8 +120,14 @@ public class projectileScript : MonoBehaviour
                         else
                         {//deal AOE
                             if (aoeFX != null)
-                            {    
-                                aoeFX.transform.position =targetObj.transform.position;
+                            {
+                                if (targetObj != null) { 
+                                    aoeFX.transform.position =targetObj.transform.position;
+                                }
+                                else
+                                {
+                                    aoeFX.transform.position=transform.position;
+                                }
                                 aoeFX.SetActive(true);
                             }
                         }

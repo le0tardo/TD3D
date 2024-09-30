@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class shooterScript : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class shooterScript : MonoBehaviour
         animator=GetComponentInChildren<Animator>();
         float randomFrame = Random.value;
         if (animator != null) { animator.Play("idle", 0, randomFrame); }
+
+        TurnToRoad();
     }
 
     private void Update()
@@ -39,8 +42,10 @@ public class shooterScript : MonoBehaviour
             //rotate towards target
             Vector3 dir=target.transform.position-transform.position;
             Quaternion qRot = Quaternion.LookRotation(dir);
-            Vector3 rot = qRot.eulerAngles;
-            transform.rotation = Quaternion.Euler(0f,rot.y,0f);
+            //Vector3 rot = qRot.eulerAngles;
+            //transform.rotation = Quaternion.Euler(0f,rot.y,0f);
+            Quaternion smoothedRotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, qRot.eulerAngles.y, 0f), Time.deltaTime * 5);
+            transform.rotation = smoothedRotation;
 
             if (!atk)
             {
@@ -67,7 +72,42 @@ public class shooterScript : MonoBehaviour
     {
         if (animator != null){animator.Play("idle");}
     }
-    
+    #region //turn to road
+    void TurnToRoad()
+    {
+        GameObject[] roadBlocks = GameObject.FindGameObjectsWithTag("roadBlock");
+        GameObject nearestRoadBlock = FindNearestRoad(roadBlocks);
+        if (nearestRoadBlock != null)
+        {
+            RotateToRoad(nearestRoadBlock.transform);
+        }
+    }
+
+    GameObject FindNearestRoad(GameObject[] roadBlocks)
+    {
+        GameObject nearest = null;
+        float minDistance = 10;
+
+        foreach (GameObject roadBlock in roadBlocks)
+        {
+            float distance = Vector3.Distance(transform.position, roadBlock.transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearest = roadBlock;
+            }
+        }
+
+        return nearest;
+    }
+    void RotateToRoad(Transform target)
+    {
+        Vector3 direction = target.position - transform.position;
+        Quaternion targetRotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Euler(0f, targetRotation.eulerAngles.y, 0f);
+        //Debug.Log("rotated towards nearest road!");
+    }
+    #endregion
     public void AttackEvent()
     {
         if (target != null && target.activeSelf)

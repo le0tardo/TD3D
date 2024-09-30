@@ -11,6 +11,7 @@ TagManager:
   - towerBlock
   - towerRayCast
   - groundBlock
+  - roadBlock
   layers:
   - Default
   - TransparentFX

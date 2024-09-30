@@ -1,20 +1,40 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class upgradeButton_script : MonoBehaviour
 {
     public TMP_Text upgCost;
     public GameObject towerInfoBox;
     public GameObject cantBuyBox;
+    public GameObject costBox;
     towerInfoBox_script twrInfoScr;
     towerScript twrScr;
+
+    Button button;
 
     void Start()
     {
         twrInfoScr=towerInfoBox.GetComponent<towerInfoBox_script>();
+        button=GetComponent<Button>();
     }
 
     void Update()
     {
+        if (twrScr != null)
+        {
+            if (twrScr.towerStatObj.upgradeTowerObj != null)
+            {
+                button.interactable = true;
+                costBox.SetActive(true);
+            }
+            else
+            {
+                button.interactable = false;
+                costBox.SetActive(false);
+            }
+        }
+
         cantBuyBox.SetActive(CantBuy());
 
         if (twrInfoScr != null)
@@ -46,7 +66,7 @@ public class upgradeButton_script : MonoBehaviour
     {
         if (twrScr != null)
         { 
-            if (playerStats_script.playerGold < twrScr.towerStatObj.upgradeCost)
+            if (playerStats_script.playerGold < twrScr.towerStatObj.upgradeCost||twrScr.towerStatObj.upgradeTowerObj==null)
             {
                 return true;
             }

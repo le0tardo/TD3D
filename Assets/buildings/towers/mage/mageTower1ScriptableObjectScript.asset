@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: mageTowerScriptableObjectScript
+  m_Name: mageTower1ScriptableObjectScript
   m_EditorClassIdentifier: 
   towerName: Mage Tower
   towerLevel: 1
@@ -25,3 +25,7 @@ MonoBehaviour:
   psn: 0
   brn: 0
   towerIcon: {fileID: 21300000, guid: 02779243e679b0e42bb3208f0ca3a335, type: 3}
+  upgradeTower: {fileID: 11400000, guid: b1b150f0d2ba0e94f9b3bee42a898bd7, type: 2}
+  upgradeTowerObj: {fileID: 7441262293316885178, guid: c33b0ce97922595429e72d35244fce27,
+    type: 3}
+  upgradeCost: 36

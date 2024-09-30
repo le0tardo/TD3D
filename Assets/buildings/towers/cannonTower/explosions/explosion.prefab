@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6965280126797118794}
   - component: {fileID: 275765413761715256}
   - component: {fileID: 7292958550170453224}
+  - component: {fileID: 774446474514997030}
   m_Layer: 0
   m_Name: fireLight
   m_TagString: Untagged
@@ -121,6 +122,28 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!95 &774446474514997030
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792368463941834836}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6be1eee702c7aac4a9b7b42f8a98227a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4761263245655077480
 GameObject:
   m_ObjectHideFlags: 0
@@ -5068,9 +5091,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b59968a14f93974097df5bbfe592c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myTower: {fileID: 0}
   radius: 1
   dmg: 0
-  enemies: []
+  fireFX: {fileID: 0}
+  smokeFX: {fileID: 0}
 --- !u!1 &7796837860855584413
 GameObject:
   m_ObjectHideFlags: 0
