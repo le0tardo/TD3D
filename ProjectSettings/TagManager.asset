@@ -13,6 +13,7 @@ TagManager:
   - groundBlock
   - roadBlock
   - ruleTile
+  - prop
   layers:
   - Default
   - TransparentFX
