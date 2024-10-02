@@ -25700,7 +25700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  gold: 99
+  gold: 250
 --- !u!4 &1081033971
 Transform:
   m_ObjectHideFlags: 0
