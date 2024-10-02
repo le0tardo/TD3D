@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: canonTower_lvl1
+  m_Name: canonTower_lvl3
   m_EditorClassIdentifier: 
   towerName: Canon
-  towerLevel: 1
+  towerLevel: 3
   towerType: 2
   towerDescription: baller
-  towerCost: 16
-  towerDamage: 3
+  towerCost: 50
+  towerDamage: 5
   towerSpeed: 1
   towerBaseSpeed: 2
   towerRange: 3
@@ -25,7 +25,6 @@ MonoBehaviour:
   psn: 0
   brn: 0
   towerIcon: {fileID: 21300000, guid: edaf53dafd62d2047aff3ca8f403358e, type: 3}
-  upgradeTower: {fileID: 11400000, guid: 11da1bd4a73ae3f43b516716d5a141b1, type: 2}
-  upgradeTowerObj: {fileID: 7441262293316885178, guid: 856fce56c8a528c47ab1058d90f02718,
-    type: 3}
-  upgradeCost: 38
+  upgradeTower: {fileID: 0}
+  upgradeTowerObj: {fileID: 0}
+  upgradeCost: 0
