@@ -460,6 +460,7 @@ MonoBehaviour:
   hp: 14
   maxHp: 0
   armor: 1
+  resist: 0
   dmg: 1
   gold: 5
   portrait: {fileID: 21300000, guid: f04215a5151862949a8b84663582df65, type: 3}
@@ -771,6 +772,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 39.049
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9ee77af9b498b184a9ed5c2b46a0cbe4,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9ee77af9b498b184a9ed5c2b46a0cbe4,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 91ff5157e45369e4dab9807c2de47cb9, type: 2}
     - target: {fileID: 919132149155446097, guid: 9ee77af9b498b184a9ed5c2b46a0cbe4,
         type: 3}
       propertyPath: m_Name
@@ -878,9 +889,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8889931540119507177, guid: 2593ca05dd800a743849fc9b07df41a0,
         type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889931540119507177, guid: 2593ca05dd800a743849fc9b07df41a0,
+        type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 420a4145806bd1f4ba74b19db603e547, type: 2}
+    - target: {fileID: 8889931540119507177, guid: 2593ca05dd800a743849fc9b07df41a0,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 91ff5157e45369e4dab9807c2de47cb9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1051,6 +1072,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -31.489
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 63b7aa2a08ff13748a6d2d1706bf5201,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 63b7aa2a08ff13748a6d2d1706bf5201,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 91ff5157e45369e4dab9807c2de47cb9, type: 2}
     - target: {fileID: 919132149155446097, guid: 63b7aa2a08ff13748a6d2d1706bf5201,
         type: 3}
       propertyPath: m_Name
