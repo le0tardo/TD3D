@@ -47,20 +47,32 @@ public class shooterScript : MonoBehaviour
 
             if (!atk)
             {
-                Fire();
-                atk = true;
+                AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+                if (stateInfo.normalizedTime >= 1.0f)
+                {
+                    Fire();
+                    atk = true;
+                }
             }
         }
         else
         {
-            if (atk)
-            {
-                AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-                if (stateInfo.normalizedTime >= 1.0f)
-                { 
-                    StopFire();
-                    atk = false;
+            if (twrScr.targets.Length > 0) 
+            { 
+                if (atk)
+                {
+                    AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+                    if (stateInfo.normalizedTime >= 1.0f)
+                    { 
+                        StopFire();
+                        atk = false;
+                    }
                 }
+            }
+            else
+            {
+                StopFire();
+                atk = false;
             }
         }
         spd = twrScr.towerSpeed;

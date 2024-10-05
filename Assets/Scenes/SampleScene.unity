@@ -39534,7 +39534,7 @@ MonoBehaviour:
     enemy: {fileID: 6312991446913509981, guid: 035b1219b7bb905408237bf2512fa8fa, type: 3}
     count: 3
     rate: 1
-  waveDelay: 2
+  waveDelay: 5
   waveCountDown: 0
   WinHUD: {fileID: 1707866478}
 --- !u!1001 &1726309378
