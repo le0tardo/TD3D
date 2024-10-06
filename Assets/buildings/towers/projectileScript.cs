@@ -31,6 +31,8 @@ public class projectileScript : MonoBehaviour
         towerScr = shooter.GetComponentInParent<towerScript>();
         dmg = Mathf.RoundToInt(towerScr.towerDamage);
 
+
+
         startPosition = transform.position;
         startWorldPosition=transform.position;
         startLocalPosition=transform.localPosition;
@@ -44,6 +46,10 @@ public class projectileScript : MonoBehaviour
         startPosition = transform.parent.TransformPoint(startLocalPosition);
         transform.position = startPosition;
         dmg = Mathf.RoundToInt(towerScr.towerDamage);
+        psn = Mathf.RoundToInt(towerScr.tower_psn);
+        frz = Mathf.RoundToInt(towerScr.tower_frz);
+        brn = Mathf.RoundToInt(towerScr.tower_brn);
+
         transform.localPosition = startPosition;
         progress = 0;
         transform.rotation = shooter.transform.rotation;
@@ -95,7 +101,9 @@ public class projectileScript : MonoBehaviour
                 if (targetObj != null)
                 {
                     enemy_script targetObjScr = targetObj.GetComponent<enemy_script>();
-                    if (magic) { targetObjScr.TakeMagicDamage(dmg); }
+                    if (magic) {
+                        targetObjScr.TakeMagicDamage(dmg);
+                    }
                     else { targetObjScr.TakeDamage(dmg); }
 
                     if (hitFX != null)
