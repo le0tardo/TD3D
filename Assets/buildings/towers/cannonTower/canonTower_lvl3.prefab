@@ -372,6 +372,7 @@ Transform:
   - {fileID: 3060930954115874990}
   - {fileID: 7676301118002997667}
   - {fileID: 2327582727163328267}
+  - {fileID: 2553310520681073367}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5866762088621609236
@@ -1004,6 +1005,95 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9c3d3d76ab52a9948a00f12ddd540031,
     type: 3}
   m_PrefabInstance: {fileID: 1491004429794778687}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2658697312364916028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5356826693863041645}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0095581
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0095581
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0095581
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00059
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79d260714089de0408455450c86b32e8,
+        type: 3}
+      propertyPath: m_Name
+      value: mechTower_lvl3_backFace
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d260714089de0408455450c86b32e8, type: 3}
+--- !u!4 &2553310520681073367 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 79d260714089de0408455450c86b32e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2658697312364916028}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2717850166836627337
 PrefabInstance:
@@ -2070,6 +2160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mechTower_lvl3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e1f831d4203328345a6449b6c7c72e37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

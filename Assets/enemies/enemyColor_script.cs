@@ -8,6 +8,7 @@ public class enemyColor_script : MonoBehaviour
     private Color hitColor = new Color(0.89f,0.24f,0.15f);
     private Color freezeColor = new Color(1.41f,1.78f,2.27f);
     private Color poisonColor = new Color(1.17f,1.7f,0.36f);
+    private Color currentColor;
     public float flashDuration = 0.02f;
 
     public GameObject prop;
@@ -18,6 +19,7 @@ public class enemyColor_script : MonoBehaviour
     {
         enemyRenderer=GetComponentInChildren<SkinnedMeshRenderer>();
         if(enemyRenderer!=null)originalColor = enemyRenderer.material.color;
+        currentColor = originalColor;
 
         if (prop != null)
         {
@@ -38,7 +40,18 @@ public class enemyColor_script : MonoBehaviour
 
         yield return new WaitForSeconds(flashDuration);
 
-        enemyRenderer.material.color = originalColor;
+        enemyRenderer.material.color = currentColor;
         if (prop != null) { propRenderer.material.color = propOriginalColor;}
+    }
+
+    public void TurnBlue(int t)
+    {
+        currentColor = freezeColor/1.5f;
+        Invoke("UnturnBlue", t);
+    }
+    void UnturnBlue()
+    {
+        currentColor = originalColor;
+        enemyRenderer.material.color = currentColor;
     }
 }

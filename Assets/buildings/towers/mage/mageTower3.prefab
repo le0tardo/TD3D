@@ -668,6 +668,7 @@ Transform:
   - {fileID: 5407493974690422620}
   - {fileID: 3076199862681634633}
   - {fileID: 7995638600890159994}
+  - {fileID: 3133250341000405573}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5866762088621609236
@@ -1294,6 +1295,95 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce8f31391f8996649a3cbb388516f7f7,
     type: 3}
   m_PrefabInstance: {fileID: 3220022441235345712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3238426682357319086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5356826693863041645}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0080555
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0080555
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0080555
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00063
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+        type: 3}
+      propertyPath: m_Name
+      value: mageTower_lvl3_backFaceMesh
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e, type: 3}
+--- !u!4 &3133250341000405573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 58f4d40278b9a5f4fbba02dcdd0e4e6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3238426682357319086}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3714361153419340337
 PrefabInstance:
@@ -1988,6 +2078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mageTower_lvl3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee1822f5122db144a80a9a71caca3124,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

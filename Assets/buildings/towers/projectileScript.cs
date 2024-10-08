@@ -101,11 +101,9 @@ public class projectileScript : MonoBehaviour
                 if (targetObj != null)
                 {
                     enemy_script targetObjScr = targetObj.GetComponent<enemy_script>();
-                    if (magic) {
-                        targetObjScr.TakeMagicDamage(dmg);
-                    }
+                    if (magic) { targetObjScr.TakeMagicDamage(dmg);}
                     else { targetObjScr.TakeDamage(dmg); }
-
+                    targetObjScr.StatusChange(psn,frz,brn);
                     if (hitFX != null)
                     {
                         hitFX_script hitScr = hitFX.GetComponent<hitFX_script>();

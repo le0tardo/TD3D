@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 9211967673366996507}
   - component: {fileID: 7325355321761303114}
   - component: {fileID: 4844142313884518799}
+  - component: {fileID: 7398830046668904383}
   m_Layer: 0
   m_Name: militiaPawn
   m_TagString: enemy
@@ -511,6 +512,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60af21ee4df4a904796201508b39f8b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7398830046668904383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409912710769268276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f30d31d4d5584643920245f15842423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7721649336755335520

@@ -22525,7 +22525,7 @@ PrefabInstance:
     - target: {fileID: 5356826693863041645, guid: a0d460943aaf9af4c965915278e336f5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 5356826693863041645, guid: a0d460943aaf9af4c965915278e336f5,
         type: 3}
@@ -39578,6 +39578,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 2
   waves:
+  - waveName: 2 peasants
+    enemy: {fileID: 6312991446913509981, guid: 0f3e4b61437c47b4fb332e38f277b530, type: 3}
+    count: 2
+    rate: 1.5
   - waveName: 3 militia
     enemy: {fileID: 6312991446913509981, guid: e93755c2b64d40c47a0eedc2f9e55c83, type: 3}
     count: 3
@@ -39594,10 +39598,6 @@ MonoBehaviour:
     enemy: {fileID: 6312991446913509981, guid: 0f3e4b61437c47b4fb332e38f277b530, type: 3}
     count: 5
     rate: 1
-  - waveName: 2 peasants
-    enemy: {fileID: 6312991446913509981, guid: 0f3e4b61437c47b4fb332e38f277b530, type: 3}
-    count: 2
-    rate: 1.5
   - waveName: 3 farmers
     enemy: {fileID: 6312991446913509981, guid: 035b1219b7bb905408237bf2512fa8fa, type: 3}
     count: 3

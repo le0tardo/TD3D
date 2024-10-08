@@ -26,14 +26,18 @@ public class enemy_script : MonoBehaviour
 
     public GameObject killPuff;
     bool isDead = false;
+
+    enemyStatus_script statScr;
     void Start()
     {
         maxHp = hp;
+        statScr = GetComponent<enemyStatus_script>();
 
         //random lane position and snap to ground road height
         float rOffset = Random.Range(-0.33f,0.33f);
         transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z+rOffset);
         transform.position = new Vector3(transform.position.x, 0.7f, transform.position.z);
+
     }
 
     void Update()
@@ -62,6 +66,7 @@ public class enemy_script : MonoBehaviour
             GameObject endPoint = other.gameObject;
             pathEnd_script endScr=endPoint.GetComponent<pathEnd_script>();
             endScr.TakeDamage(dmg);
+            if (killPuff != null) { Instantiate(killPuff, transform.position, Quaternion.identity); }
             Destroy(this.gameObject);
         }
     }
@@ -82,6 +87,12 @@ public class enemy_script : MonoBehaviour
         clrScr.FlashRed();
     }
 
+    public void StatusChange(int _psn, int _frz, int _brn)
+    {
+        if (_psn > 0) { }
+        if (_frz > 0) { statScr.Freeze(_frz);}
+        if (_brn > 0) { }
+    }
     void Die()
     {
         enemyMovement_script moveScr=GetComponent<enemyMovement_script>();
