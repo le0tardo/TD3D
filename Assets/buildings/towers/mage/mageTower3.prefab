@@ -1828,6 +1828,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2941168516143842967, guid: 321bbbcaaca94db4683b494e0c55d0dd,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 6448248787447026305}
+    - targetCorrespondingSourceObject: {fileID: -2941168516143842967, guid: 321bbbcaaca94db4683b494e0c55d0dd,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 6635097428068189807}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 321bbbcaaca94db4683b494e0c55d0dd,
@@ -2183,6 +2187,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: magePawn_hat3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad90333cbdf22b6488fc774e93ebb572,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2286,6 +2295,95 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7685186600871586066, guid: 10a02e04a6fba1543b4eda5c96ffde85,
     type: 3}
   m_PrefabInstance: {fileID: 6813959987884139182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6842781370522203498
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1209656917051536175}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1325998
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1326
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1326
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6314315
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7754317
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 014a949edffc85242b7557b7498a836a,
+        type: 3}
+      propertyPath: m_Name
+      value: magePawn_hat3_backface
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 014a949edffc85242b7557b7498a836a, type: 3}
+--- !u!4 &6448248787447026305 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 014a949edffc85242b7557b7498a836a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6842781370522203498}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6898897248775935164
 PrefabInstance:

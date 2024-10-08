@@ -37,6 +37,8 @@ public class gizmoScript : MonoBehaviour
     {
         towerScript towerToBuffScr = towerToBuff.GetComponent<towerScript>();
         if (buffSpeed > 0) { towerToBuffScr.towerSpeed += buffSpeed;}
+        //frost ++; brn--;
+        //brn++,frz--;
     }
 
     public void RemoveBuff()
