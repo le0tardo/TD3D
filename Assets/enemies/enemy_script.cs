@@ -91,7 +91,7 @@ public class enemy_script : MonoBehaviour
     {
         if (_psn > 0) { }
         if (_frz > 0) { statScr.Freeze(_frz);}
-        if (_brn > 0) { }
+        if (_brn > 0) { statScr.Burn(_brn);}
     }
     void Die()
     {

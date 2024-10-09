@@ -24,7 +24,7 @@ public class gizmoScript : MonoBehaviour
     private void Start()
     {
         twrScr = GetComponent<towerScript>();
-        range = twrScr.towerRange;
+        //range = twrScr.towerRange;
     }
 
     public void AddToList(GameObject towerToAdd)
@@ -37,6 +37,7 @@ public class gizmoScript : MonoBehaviour
     {
         towerScript towerToBuffScr = towerToBuff.GetComponent<towerScript>();
         if (buffSpeed > 0) { towerToBuffScr.towerSpeed += buffSpeed;}
+        if (buffRange > 0) { towerToBuffScr.towerRange += buffRange;}
         //frost ++; brn--;
         //brn++,frz--;
     }
@@ -50,7 +51,7 @@ public class gizmoScript : MonoBehaviour
                 towerScript towerToBuffScr = tower.GetComponent<towerScript>();
 
                 if (buffSpeed > 0) { towerToBuffScr.towerSpeed -= buffSpeed; }
-
+                if (buffRange > 0) { towerToBuffScr.towerRange -= buffRange; }
             }
         }
     }

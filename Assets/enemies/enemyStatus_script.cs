@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class enemyStatus_script : MonoBehaviour
 {
+    public GameObject fire;
+
     enemy_script enemyScr;
     enemyMovement_script moveScr;
     enemyColor_script colorScr;
@@ -19,6 +21,19 @@ public class enemyStatus_script : MonoBehaviour
         defaultSpd = moveScr.spd;
         frzSpd = moveScr.spd / 2;
     }
+
+    public void Burn(int burnTime)
+    {
+        fire.SetActive(true);
+        Invoke("StopBurn",burnTime);
+        //deal actual damage in fire object? while active, coroutine hp--;
+    }
+
+    void StopBurn()
+    {
+        fire.SetActive(false);
+    }
+
     public void Freeze(int time)
     {
         StartCoroutine(FreezeRoutine(time));

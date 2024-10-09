@@ -20,7 +20,7 @@ MonoBehaviour:
   towerDamage: 0
   towerSpeed: 1
   towerBaseSpeed: 0
-  towerRange: 3
+  towerRange: 0
   frz: 0
   psn: 0
   brn: 0

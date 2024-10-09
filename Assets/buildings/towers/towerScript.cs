@@ -40,6 +40,7 @@ public class towerScript : MonoBehaviour
         if (drawRange)
         {
             rangeMarker.SetActive(true);
+            rangeMarker.transform.localScale = new Vector3(towerRange, towerRange, 1f);
         }
         else
         {
@@ -101,7 +102,14 @@ public class towerScript : MonoBehaviour
         tower_psn = towerStatObj.psn;
         tower_brn = towerStatObj.brn;
 
+        if (towerType != towerType.Gizmo) //gizmos have set range 
+        { 
         rangeMarker.transform.localScale = new Vector3(towerRange, towerRange, 1f);
+        }
+        else
+        {
+            rangeMarker.transform.localScale = new Vector3(3,3,1);
+        }
     }
 
     public void ClearTowerBlock()
