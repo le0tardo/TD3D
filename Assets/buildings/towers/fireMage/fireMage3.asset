@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: frostMage3
+  m_Name: fireMage3
   m_EditorClassIdentifier: 
-  towerName: Frost Mage
+  towerName: Fire Mage
   towerLevel: 3
   towerType: 1
-  towerDescription: The chillest guy.
-  towerCost: 50
-  towerDamage: 3
+  towerDescription: Hot stuff
+  towerCost: 48
+  towerDamage: 1
   towerSpeed: 1
-  towerBaseSpeed: 3
+  towerBaseSpeed: 2
   towerRange: 4
-  frz: 5
+  frz: 0
   psn: 0
-  brn: 0
-  towerIcon: {fileID: 21300000, guid: 2f8983d975d57884a8736dbc159b79d2, type: 3}
+  brn: 3
+  towerIcon: {fileID: 21300000, guid: f3c4f2a816b649f43b86be622c5111e1, type: 3}
   upgradeTower: {fileID: 0}
   upgradeTowerObj: {fileID: 0}
   upgradeCost: 0

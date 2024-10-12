@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: frostMage2
+  m_Name: fireMage2
   m_EditorClassIdentifier: 
-  towerName: Frost Mage
+  towerName: Fire Mage
   towerLevel: 2
   towerType: 1
-  towerDescription: A chillier guy.
-  towerCost: 33
-  towerDamage: 3
+  towerDescription: Hot stuff
+  towerCost: 36
+  towerDamage: 1
   towerSpeed: 1
-  towerBaseSpeed: 3
+  towerBaseSpeed: 2
   towerRange: 4
-  frz: 3
+  frz: 0
   psn: 0
-  brn: 0
-  towerIcon: {fileID: 21300000, guid: 2f8983d975d57884a8736dbc159b79d2, type: 3}
-  upgradeTower: {fileID: 11400000, guid: b94f70a449c35ba43beda8f1ba37fcd6, type: 2}
-  upgradeTowerObj: {fileID: 7441262293316885178, guid: b9b78803da2ec3e4baeaf3d344e95eb3,
+  brn: 2
+  towerIcon: {fileID: 21300000, guid: f3c4f2a816b649f43b86be622c5111e1, type: 3}
+  upgradeTower: {fileID: 11400000, guid: 360b764e31975554d8571e3d9a75f0d0, type: 2}
+  upgradeTowerObj: {fileID: 7441262293316885178, guid: 9e827511f82621f418295aada52dc847,
     type: 3}
-  upgradeCost: 50
+  upgradeCost: 48

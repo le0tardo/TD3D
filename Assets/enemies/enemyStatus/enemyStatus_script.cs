@@ -24,9 +24,13 @@ public class enemyStatus_script : MonoBehaviour
 
     public void Burn(int burnTime)
     {
-        fire.SetActive(true);
-        Invoke("StopBurn",burnTime);
-        //deal actual damage in fire object? while active, coroutine hp--;
+        if (fire != null)
+        {
+            fire.SetActive(true);
+            CancelInvoke("StopBurn");
+            Invoke("StopBurn",burnTime);
+            //deal actual damage in fire object? while active, coroutine hp--;
+        }
     }
 
     void StopBurn()

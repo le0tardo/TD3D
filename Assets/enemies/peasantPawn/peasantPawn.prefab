@@ -527,6 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f30d31d4d5584643920245f15842423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fire: {fileID: 494211063840212684}
 --- !u!1 &7721649336755335520
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,6 +742,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemyFire
       objectReference: {fileID: 0}
+    - target: {fileID: 3801336610205881229, guid: 1d925bdc962c435418159c4ff28ec930,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4552069724251427127, guid: 1d925bdc962c435418159c4ff28ec930,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -811,6 +817,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d925bdc962c435418159c4ff28ec930, type: 3}
+--- !u!1 &494211063840212684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3801336610205881229, guid: 1d925bdc962c435418159c4ff28ec930,
+    type: 3}
+  m_PrefabInstance: {fileID: 3610415589962667329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &952219480066409590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4552069724251427127, guid: 1d925bdc962c435418159c4ff28ec930,
