@@ -89,7 +89,7 @@ public class enemy_script : MonoBehaviour
 
     public void StatusChange(int _psn, int _frz, int _brn)
     {
-        if (_psn > 0) { }
+        if (_psn > 0) { statScr.Poison(_psn);}
         if (_frz > 0) { statScr.Freeze(_frz);}
         if (_brn > 0) { statScr.Burn(_brn);}
     }

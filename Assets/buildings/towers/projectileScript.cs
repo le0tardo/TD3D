@@ -24,6 +24,7 @@ public class projectileScript : MonoBehaviour
     float progress;
     public GameObject hitFX;
     public GameObject aoeFX;
+    public GameObject psnFX;
 
     void Awake()
     {
@@ -49,6 +50,12 @@ public class projectileScript : MonoBehaviour
         psn = Mathf.RoundToInt(towerScr.tower_psn);
         frz = Mathf.RoundToInt(towerScr.tower_frz);
         brn = Mathf.RoundToInt(towerScr.tower_brn);
+
+        if (psnFX != null) 
+        { 
+            if (psn > 0) { psnFX.SetActive(true); }
+            else { psnFX.SetActive(false); }
+        }
 
         transform.localPosition = startPosition;
         progress = 0;

@@ -35,9 +35,12 @@ public class gizmoScript : MonoBehaviour
 
     void ApplyBuff(GameObject towerToBuff)
     {
+        //if tower to buff .towerType== allowedTowerType
+
         towerScript towerToBuffScr = towerToBuff.GetComponent<towerScript>();
         if (buffSpeed > 0) { towerToBuffScr.towerSpeed += buffSpeed;}
         if (buffRange > 0) { towerToBuffScr.towerRange += buffRange;}
+        if (buffPsn > 0) { towerToBuffScr.tower_psn += buffPsn;}
         //frost ++; brn--;
         //brn++,frz--;
     }
@@ -52,6 +55,7 @@ public class gizmoScript : MonoBehaviour
 
                 if (buffSpeed > 0) { towerToBuffScr.towerSpeed -= buffSpeed; }
                 if (buffRange > 0) { towerToBuffScr.towerRange -= buffRange; }
+                if (buffPsn > 0) { towerToBuffScr.tower_psn -= buffPsn; }
             }
         }
     }

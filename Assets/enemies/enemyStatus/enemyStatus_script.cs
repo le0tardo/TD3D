@@ -12,6 +12,9 @@ public class enemyStatus_script : MonoBehaviour
     float defaultSpd;
     float frzSpd;
 
+    float currentPoisonLevel = 0;
+    float psnTick = 2.5f;
+
     private void Start()
     {
         enemyScr = GetComponent<enemy_script>();
@@ -20,6 +23,17 @@ public class enemyStatus_script : MonoBehaviour
 
         defaultSpd = moveScr.spd;
         frzSpd = moveScr.spd / 2;
+    }
+    public void Poison(int psn)
+    {
+        if (psn > currentPoisonLevel) {  currentPoisonLevel = psn; }
+        InvokeRepeating("DealPoisonDamge", psnTick, psnTick);
+    }
+
+    void DealPoisonDamge()
+    {
+        enemyScr.hp -= currentPoisonLevel;
+        colorScr.FlashPurple();
     }
 
     public void Burn(int burnTime)
