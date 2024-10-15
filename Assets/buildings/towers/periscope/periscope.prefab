@@ -309,11 +309,8 @@ MonoBehaviour:
   buffBrn: 0
   buffPsn: 0
   buffFrz: 0
-  x_minus: 0
-  x_plus: 0
-  z_minus: 0
-  z_plus: 0
   towers: []
+  buffFX: {fileID: 6330344791709797029, guid: 8c0457151f196424c9e44c83936773cc, type: 3}
 --- !u!95 &7420604322613395446
 Animator:
   serializedVersion: 7

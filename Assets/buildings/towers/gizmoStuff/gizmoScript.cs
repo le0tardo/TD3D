@@ -12,19 +12,20 @@ public class gizmoScript : MonoBehaviour
     public float buffPsn;
     public float buffFrz;
 
-    public bool x_minus=false;
-    public bool x_plus=false;
-    public bool z_minus=false;
-    public bool z_plus=false;
-
     towerScript twrScr;
     float range;
     public List<GameObject> towers = new List<GameObject>();
 
+    public GameObject buffFX;
+    string buffString;
+    float buffAmmount;
+
     private void Start()
     {
         twrScr = GetComponent<towerScript>();
-        //range = twrScr.towerRange;
+
+        buffString = "BUFF";
+        buffAmmount = 1;
     }
 
     public void AddToList(GameObject towerToAdd)
@@ -38,11 +39,23 @@ public class gizmoScript : MonoBehaviour
         //if tower to buff .towerType== allowedTowerType
 
         towerScript towerToBuffScr = towerToBuff.GetComponent<towerScript>();
-        if (buffSpeed > 0) { towerToBuffScr.towerSpeed += buffSpeed;}
-        if (buffRange > 0) { towerToBuffScr.towerRange += buffRange;}
-        if (buffPsn > 0) { towerToBuffScr.tower_psn += buffPsn;}
+        if (buffSpeed > 0) { towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD";buffAmmount = buffSpeed;}
+        if (buffRange > 0) { towerToBuffScr.towerRange += buffRange; buffString = "RNG";buffAmmount = buffRange; }
+        if (buffPsn > 0) { towerToBuffScr.tower_psn += buffPsn;buffString = "PSN";buffAmmount = buffPsn;}
+        if (buffBrn > 0) { towerToBuffScr.tower_brn += buffBrn;towerToBuffScr.tower_frz -= buffBrn;buffString = "BRN";buffAmmount = buffBrn;}
         //frost ++; brn--;
-        //brn++,frz--;
+        
+        if (buffFX != null)
+        {
+            Vector3 spawnPos=new Vector3(towerToBuff.transform.position.x,towerToBuff.transform.position.y+2,towerToBuff.transform.position.z);
+            GameObject BuffTextObj = Instantiate(buffFX, spawnPos, Quaternion.identity);
+            BuffFX buffFXscr=BuffTextObj.GetComponent<BuffFX>();
+            buffFXscr.buffText.text = "+"+buffAmmount+" "+buffString;
+            towerToBuffScr.PlayWobble();
+        }
+
+
+
     }
 
     public void RemoveBuff()
@@ -56,6 +69,7 @@ public class gizmoScript : MonoBehaviour
                 if (buffSpeed > 0) { towerToBuffScr.towerSpeed -= buffSpeed; }
                 if (buffRange > 0) { towerToBuffScr.towerRange -= buffRange; }
                 if (buffPsn > 0) { towerToBuffScr.tower_psn -= buffPsn; }
+                if (buffBrn > 0) { towerToBuffScr.tower_brn -= buffBrn; towerToBuffScr.tower_frz += buffBrn;}
             }
         }
     }
@@ -66,10 +80,5 @@ public class gizmoScript : MonoBehaviour
         {
             RemoveBuff();
         }
-    }
-    private void OnDrawGizmosSelected()
-    {
-        //Gizmos.color = Color.green;
-        //Gizmos.DrawWireSphere(transform.position, 3);
     }
 }

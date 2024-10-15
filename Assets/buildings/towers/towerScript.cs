@@ -120,4 +120,10 @@ public class towerScript : MonoBehaviour
             twrBlockScr.Clear();
         }
     }
+
+    public void PlayWobble()
+    {
+        Animator anim = GetComponent<Animator>();
+        anim.Play("Base Layer.towerBuffAnim",0,0f);
+    }
 }
