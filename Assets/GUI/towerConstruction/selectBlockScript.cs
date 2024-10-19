@@ -9,9 +9,12 @@ public class selectBlockScript : MonoBehaviour
 
     Animator boxAnimator;
     bool boxUp=false;
+
+    AudioSource source;
     void Start()
     {
         boxAnimator=towerBuildBox.GetComponent<Animator>();
+        source=GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -38,6 +41,9 @@ public class selectBlockScript : MonoBehaviour
                         selectedTowerBlock = clickedTowerBlock;
                         TowerBlockSelected();
                     }
+
+                    source.pitch = Random.Range(0.75f,1.25f);
+                    source.Play();
                 }
                 else
                 {

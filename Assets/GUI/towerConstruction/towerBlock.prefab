@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6459d8e6adbef5148a80fbb3e19f527d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  marker: {fileID: 0}
+  triggerObj: {fileID: 0}
 --- !u!1 &6127287761831266862
 GameObject:
   m_ObjectHideFlags: 0
