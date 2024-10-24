@@ -118,12 +118,15 @@ public class towerScript : MonoBehaviour
         {
             towerBlock_script twrBlockScr=groundBlock.GetComponent<towerBlock_script>();
             twrBlockScr.Clear();
+
+            TowerSound snd=GetComponent<TowerSound>();
+            snd.PlayDestroySound();
         }
     }
 
     public void PlayWobble()
     {
         Animator anim = GetComponent<Animator>();
-        anim.Play("Base Layer.towerBuffAnim",0,0f);
+        anim.Play("towerBuffAnim",0,0f);
     }
 }

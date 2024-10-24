@@ -688,9 +688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnSnd: {fileID: 8300000, guid: 6e597241f00ba8b439f6f8c40520a3dd, type: 3}
   boostSnd: {fileID: 8300000, guid: d830d6a66da93be48a2842121126957e, type: 3}
-  killSnd: {fileID: 8300000, guid: b72d618bacaf0e64abe3b1c7ed070d00, type: 3}
+  killSnd: {fileID: 8300000, guid: c9c4c5f89afefb844a3390260cacd333, type: 3}
   atkSnd: {fileID: 8300000, guid: c255442e9cf456b4896bf448cf774bc8, type: 3}
-  hitSnd: {fileID: 8300000, guid: ce4e7eb8f5a23a54cb1b486d007fe2a5, type: 3}
+  hitSnd: {fileID: 8300000, guid: b7e9fa582bb45954395c37ab6a44483b, type: 3}
 --- !u!82 &8072129897837042369
 AudioSource:
   m_ObjectHideFlags: 0

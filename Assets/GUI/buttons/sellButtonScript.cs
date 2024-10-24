@@ -4,6 +4,7 @@ using TMPro;
 public class sellButtonScript : MonoBehaviour
 {
     public GameObject gameMasterObj;
+    public GameObject coinFX;
     selectTower_script twrSlctScr;
     GameObject selectedTower;
     towerScript twrScr;
@@ -31,10 +32,16 @@ public class sellButtonScript : MonoBehaviour
         {
             playerStats_script.playerGold += goldPrice;
             twrScr.ClearTowerBlock();
+
+            coinFX.transform.position=selectedTower.transform.position;
+            coinFX.SetActive(true);
+
             Destroy(selectedTower);
             selectedTower=null;
             twrSlctScr.selectedTower = null;
             twrSlctScr.TowerUnselected();
+
+
         }
     }
 }

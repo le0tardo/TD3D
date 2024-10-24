@@ -10,6 +10,7 @@ public class projectileScript : MonoBehaviour
     public GameObject shooter;
     shooterScript shooterScr;
     towerScript towerScr;
+    TowerSound towerSnd;
 
     public int dmg;
     public float spd; //not attack speed!
@@ -30,6 +31,7 @@ public class projectileScript : MonoBehaviour
     {
         shooterScr = shooter.GetComponent<shooterScript>();
         towerScr = shooter.GetComponentInParent<towerScript>();
+        towerSnd = shooter.GetComponentInParent<TowerSound>();
         dmg = Mathf.RoundToInt(towerScr.towerDamage);
 
 
@@ -69,10 +71,10 @@ public class projectileScript : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+        towerSnd.PlayAttackSound();
     }
     private void OnDisable()
     {
-        //transform.position = startPosition;
         transform.localPosition= startLocalPosition;
     }
 
@@ -116,7 +118,9 @@ public class projectileScript : MonoBehaviour
                         hitFX_script hitScr = hitFX.GetComponent<hitFX_script>();
                         hitScr.Hit(transform.position);
                     }
-                    this.gameObject.SetActive(false);
+
+                    HitEnemy();
+                    //this.gameObject.SetActive(false);
                 }
                 else
                 {
@@ -129,9 +133,15 @@ public class projectileScript : MonoBehaviour
                 {
                     aoeFX.transform.position = targetPosition;
                     aoeFX.SetActive(true);
-                    this.gameObject.SetActive(false);
+                    //this.gameObject.SetActive(false);
+                    HitEnemy();
                 }
             }
         }
+    }
+    void HitEnemy()
+    {
+        towerSnd.PlayHitSound();
+        this.gameObject.SetActive(false);
     }
 }

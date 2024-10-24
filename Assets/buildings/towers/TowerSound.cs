@@ -9,21 +9,39 @@ public class TowerSound : MonoBehaviour
     [SerializeField] AudioClip hitSnd;
 
     private AudioSource source;
+    private AudioSource globalSource;
+    GameObject globalAudio;
 
     private void Start()
     {
         source = GetComponent<AudioSource>();
         if (spawnSnd != null) { source.PlayOneShot(spawnSnd); }
+
+        globalAudio = GameObject.Find("globalAudio");
+        globalSource = globalAudio.AddComponent<AudioSource>();
     }
 
     public void PlayAttackSound()
     {
-        if (atkSnd != null) { source.PlayOneShot(atkSnd); }
+        if (globalSource != null)
+        { 
+            globalSource.pitch = Random.Range(0.8f, 1.2f);
+            if (atkSnd != null) { globalSource.PlayOneShot(atkSnd); }
+        }
+    }
+
+    public void PlayHitSound()
+    {
+        if (globalSource != null)
+        {
+            globalSource.pitch = Random.Range(0.8f,1.2f);
+            if (hitSnd != null) { globalSource.PlayOneShot(hitSnd); }
+        }
     }
 
     public void PlayDestroySound()
     {
-        if (killSnd != null) { source.PlayOneShot(killSnd); }
+        if (killSnd != null) { globalSource.PlayOneShot(killSnd); }
     }
 
     public void PlayBoostSound()

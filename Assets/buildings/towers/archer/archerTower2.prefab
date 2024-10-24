@@ -167,6 +167,7 @@ MonoBehaviour:
   brn: 0
   hitFX: {fileID: 0}
   aoeFX: {fileID: 0}
+  psnFX: {fileID: 0}
 --- !u!1 &1849944297719212054
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +500,7 @@ MonoBehaviour:
   brn: 0
   hitFX: {fileID: 0}
   aoeFX: {fileID: 0}
+  psnFX: {fileID: 0}
 --- !u!1 &4902946962315710500
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +833,7 @@ MonoBehaviour:
   brn: 0
   hitFX: {fileID: 7906719996099331224}
   aoeFX: {fileID: 0}
+  psnFX: {fileID: 0}
 --- !u!1 &6637972457367043694
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +889,7 @@ MonoBehaviour:
   brn: 0
   hitFX: {fileID: 7906719996099331224}
   aoeFX: {fileID: 0}
+  psnFX: {fileID: 0}
 --- !u!1 &7441262293316885178
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +903,8 @@ GameObject:
   - component: {fileID: 6312182600336503650}
   - component: {fileID: 4606895252531539456}
   - component: {fileID: 1336851837999050212}
+  - component: {fileID: 1585098184972504538}
+  - component: {fileID: 2592362248188268506}
   m_Layer: 0
   m_Name: archerTower2
   m_TagString: towerRayCast
@@ -1112,6 +1118,120 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1585098184972504538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441262293316885178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e57e40ac385f9d428f4c9baf12ffbc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnSnd: {fileID: 8300000, guid: d830d6a66da93be48a2842121126957e, type: 3}
+  boostSnd: {fileID: 8300000, guid: a8cc913c9255f1346958d507ed215d3e, type: 3}
+  killSnd: {fileID: 8300000, guid: c9c4c5f89afefb844a3390260cacd333, type: 3}
+  atkSnd: {fileID: 8300000, guid: c255442e9cf456b4896bf448cf774bc8, type: 3}
+  hitSnd: {fileID: 8300000, guid: b7e9fa582bb45954395c37ab6a44483b, type: 3}
+--- !u!82 &2592362248188268506
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441262293316885178}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.66
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7443348781175918059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1399,7 @@ MonoBehaviour:
   brn: 0
   hitFX: {fileID: 0}
   aoeFX: {fileID: 0}
+  psnFX: {fileID: 0}
 --- !u!1 &8090145432879143154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1455,7 @@ MonoBehaviour:
   brn: 0
   hitFX: {fileID: 0}
   aoeFX: {fileID: 0}
+  psnFX: {fileID: 0}
 --- !u!1001 &272267999923304574
 PrefabInstance:
   m_ObjectHideFlags: 0
