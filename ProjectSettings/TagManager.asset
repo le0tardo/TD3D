@@ -14,6 +14,7 @@ TagManager:
   - roadBlock
   - ruleTile
   - prop
+  - killPuff
   layers:
   - Default
   - TransparentFX

@@ -101,10 +101,9 @@ public class enemy_script : MonoBehaviour
     }
     void Recycle()
     {
-        //find spawn point
-        //warp to spawn
-        //this.gameObject.SetActive(false);
-        if (killPuff != null) { Instantiate(killPuff, transform.position, Quaternion.identity); }
+
+        //if (killPuff != null) { Instantiate(killPuff, transform.position, Quaternion.identity); }
+        KillPuffManager.ActivateKillPuff(transform.position);
         playerStats_script.playerGold += gold;
         Destroy(this.gameObject);
     }
