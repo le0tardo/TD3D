@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using static Unity.VisualScripting.Member;
 
 public class selectTower_script : MonoBehaviour
 {
@@ -9,12 +10,14 @@ public class selectTower_script : MonoBehaviour
     towerInfoBox_script twrInfoScr;
     Animator boxAnimator;
     towerScript twrScr;
+    AudioSource source;
 
     bool boxUp = false;
     void Start()
     {
         boxAnimator = towerInfoBox.GetComponent<Animator>();
         twrInfoScr=towerInfoBox.GetComponent<towerInfoBox_script>();
+        source=GetComponent<AudioSource>();
     }
 
     void Update()
@@ -84,6 +87,9 @@ public class selectTower_script : MonoBehaviour
             boxAnimator.Play("slideUp", 0, 0);
             boxUp = true;
         }
+
+        source.pitch = Random.Range(0.75f, 1.25f);
+        source.Play();
     }
 
 }

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Profiling;
 using static spawnScript;
 
 public class spawnScript : MonoBehaviour
@@ -59,9 +61,14 @@ public class spawnScript : MonoBehaviour
 
     void WaveComplete()
     {
-        //Debug.Log("wave complete.");
+
         state= spawnState.counting;
         waveCountDown = waveDelay;
+
+        //garbage collection
+        //Resources.UnloadUnusedAssets();
+        //GC.Collect();
+        //CheckMemory();
 
         if (nextWave + 1 > waves.Length - 1)//the last wave
         {
@@ -108,6 +115,13 @@ public class spawnScript : MonoBehaviour
     void SpawnEnemy(Transform _enemy)
     {
         Instantiate(_enemy, transform.position, transform.rotation);
-        //Debug.Log("you spawned an enemy!");
+    }
+
+    void CheckMemory()
+    {
+        Debug.Log($"Mono Used Memory: {Profiler.GetMonoUsedSizeLong() / 1024 / 1024} MB");
+        Debug.Log($"Total Reserved Memory: {Profiler.GetTotalReservedMemoryLong() / 1024 / 1024} MB");
+        Debug.Log($"Allocated GPU Memory: {Profiler.GetAllocatedMemoryForGraphicsDriver() / 1024 / 1024} MB");
+        Debug.Log($"GC Memory: {GC.GetTotalMemory(false) / 1024 / 1024} MB");
     }
 }
