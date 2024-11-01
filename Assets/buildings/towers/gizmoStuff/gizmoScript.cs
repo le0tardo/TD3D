@@ -43,9 +43,22 @@ public class gizmoScript : MonoBehaviour
         if (buffRange > 0) { towerToBuffScr.towerRange += buffRange; buffString = "RNG";buffAmmount = buffRange; }
         if (buffPsn > 0) { towerToBuffScr.tower_psn += buffPsn;buffString = "PSN";buffAmmount = buffPsn;}
         if (buffBrn > 0) { towerToBuffScr.tower_brn += buffBrn;towerToBuffScr.tower_frz -= buffBrn;buffString = "BRN";buffAmmount = buffBrn;}
-        //frost ++; brn--;
         
-        if (buffFX != null)
+        if (buffDamage > 0) //only physical damage
+        { 
+            if(towerToBuffScr.towerType == towerType.Mage)
+            {
+                buffString = ""; //to stop buffFX from instantiating
+            }
+            else
+            {
+                towerToBuffScr.towerDamage += buffDamage; buffString = "DMG"; buffAmmount = buffDamage;
+            }
+        }
+
+        //frost ++; brn--;
+
+        if (buffFX != null && buffString != "")
         {
             Vector3 spawnPos=new Vector3(towerToBuff.transform.position.x,towerToBuff.transform.position.y+2,towerToBuff.transform.position.z);
             GameObject BuffTextObj = Instantiate(buffFX, spawnPos, Quaternion.identity);
@@ -53,7 +66,6 @@ public class gizmoScript : MonoBehaviour
             buffFXscr.buffText.text = "+"+buffAmmount+" "+buffString;
             towerToBuffScr.PlayWobble();
         }
-
 
 
     }
@@ -70,6 +82,18 @@ public class gizmoScript : MonoBehaviour
                 if (buffRange > 0) { towerToBuffScr.towerRange -= buffRange; }
                 if (buffPsn > 0) { towerToBuffScr.tower_psn -= buffPsn; }
                 if (buffBrn > 0) { towerToBuffScr.tower_brn -= buffBrn; towerToBuffScr.tower_frz += buffBrn;}
+
+                if (buffDamage > 0)
+                {
+                    if (towerToBuffScr.towerType == towerType.Mage)
+                    {
+                        //do notthing
+                    }
+                    else
+                    { 
+                        towerToBuffScr.towerDamage -= buffDamage;
+                    }
+                }
             }
         }
     }
