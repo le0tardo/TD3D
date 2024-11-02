@@ -15,6 +15,7 @@ public class towerScriptableObjectScript : ScriptableObject
 	public string towerName;
 	public int towerLevel;
 	public towerType towerType;
+	[TextArea]
 	public string towerDescription;
 	public int towerCost;
     public float towerDamage;
