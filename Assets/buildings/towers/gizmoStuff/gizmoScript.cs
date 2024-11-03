@@ -24,6 +24,8 @@ public class gizmoScript : MonoBehaviour
     string buffString;
     float buffAmmount;
 
+    public bool buffAOE;
+
     private void Start()
     {
         twrScr = GetComponent<towerScript>();
@@ -42,14 +44,39 @@ public class gizmoScript : MonoBehaviour
     {
 
         towerScript towerToBuffScr = towerToBuff.GetComponent<towerScript>();
-        if (buffSpeed > 0) { towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD";buffAmmount = buffSpeed;} //remove artillery from here
+        if (buffSpeed > 0) {
+            if (!buffAOE)
+            {
+                if (towerToBuffScr.towerType == towerType.Archer || towerToBuffScr.towerType == towerType.Mage)
+                {
+                    towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD"; buffAmmount = buffSpeed;
+                }
+                else
+                {
+                    buffString = "";
+                }
+            }
+            else
+            {
+                if (towerToBuffScr.towerType == towerType.Gadget)
+                {
+                    towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD"; buffAmmount = buffSpeed;
+                }
+                else
+                {
+                    buffString = "";
+                }
+            }
+            //towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD";buffAmmount = buffSpeed;
+        
+        } 
         if (buffRange > 0) { towerToBuffScr.towerRange += buffRange; buffString = "RNG";buffAmmount = buffRange; }
         if (buffPsn > 0) { towerToBuffScr.tower_psn += buffPsn;buffString = "PSN";buffAmmount = buffPsn;}
         
         if (buffBrn > 0) //burn buff skips mage and frost mage. 
         {
             if (towerToBuffScr.towerType == towerType.Archer || towerToBuffScr.towerType == towerType.Gadget) {
-                towerToBuffScr.tower_brn += buffBrn; buffString = "BRN"; buffAmmount = buffBrn;
+                towerToBuffScr.tower_brn += buffBrn; buffString = "BRN"; buffAmmount = buffBrn; towerToBuffScr.tower_frz -= buffBrn;
             }else if (towerToBuffScr.towerType == towerType.Mage)
             {
                 if (towerToBuffScr.tower_brn > 0)
@@ -61,7 +88,6 @@ public class gizmoScript : MonoBehaviour
                     buffString = "";
                 }
             }
-            
         }
         
         if (buffDamage > 0) //only physical damage
@@ -87,7 +113,21 @@ public class gizmoScript : MonoBehaviour
             }
         }
 
-        //frost ++; brn--;
+        if (buffFrz > 0)
+        {
+            if (towerToBuffScr.towerType == towerType.Gadget)
+            {
+                towerToBuffScr.tower_frz += buffFrz; buffString = "FRZ"; buffAmmount = buffFrz;towerToBuffScr.tower_brn -= buffFrz;
+            }
+            else if (towerToBuffScr.towerType == towerType.Mage && towerToBuffScr.tower_frz > 0) //only on frost mages
+            {
+                towerToBuffScr.tower_frz += buffFrz; buffString = "FRZ"; buffAmmount = buffFrz;
+            }
+            else
+            {
+                buffString = "";
+            }
+        }
 
         if (buffFX != null && buffString != "")
         {
