@@ -15,7 +15,7 @@ MonoBehaviour:
   towerName: Brewery
   towerLevel: 1
   towerType: 3
-  towerDescription: Coffee!
+  towerDescription: +1 SPD.<br>Boosts Marksmen and Mages.
   towerCost: 12
   towerDamage: 0
   towerSpeed: 1
@@ -25,6 +25,7 @@ MonoBehaviour:
   psn: 0
   brn: 0
   towerIcon: {fileID: 21300000, guid: 432d9e8871d91a748b5412542a9a2319, type: 3}
-  upgradeTower: {fileID: 0}
-  upgradeTowerObj: {fileID: 0}
+  upgradeTower: {fileID: 11400000, guid: df1a737c95d47be4694c5ce80569ca54, type: 2}
+  upgradeTowerObj: {fileID: 5587037858034042585, guid: c61f0979bc1228647a6a49b150b042b0,
+    type: 3}
   upgradeCost: 26

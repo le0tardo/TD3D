@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: igloo
+  m_Name: coffeTower3
   m_EditorClassIdentifier: 
-  towerName: Igloo
-  towerLevel: 1
+  towerName: Brewery III
+  towerLevel: 3
   towerType: 3
-  towerDescription: +1 FRZ.<br>Buffs Artillery and Frost Mages.
-  towerCost: 1
+  towerDescription: +1 SPD.<br>Boosts Marksmen and Mages.
+  towerCost: 12
   towerDamage: 0
-  towerSpeed: 0
+  towerSpeed: 2
   towerBaseSpeed: 0
   towerRange: 0
-  frz: 1
+  frz: 0
   psn: 0
   brn: 0
-  towerIcon: {fileID: 21300000, guid: 9725c0f676a25f24aa71916d5de1b80e, type: 3}
-  upgradeTower: {fileID: 11400000, guid: 129de9f2ab49f4442bf445baf46a9c9c, type: 2}
-  upgradeTowerObj: {fileID: 5587037858034042585, guid: 61bca49bb5d6def4291cdae1560565ed,
-    type: 3}
-  upgradeCost: 2
+  towerIcon: {fileID: 21300000, guid: 432d9e8871d91a748b5412542a9a2319, type: 3}
+  upgradeTower: {fileID: 0}
+  upgradeTowerObj: {fileID: 0}
+  upgradeCost: 26

@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: manaCrystal
+  m_Name: periscope1
   m_EditorClassIdentifier: 
-  towerName: Mana Crystal
+  towerName: Spy Glass
   towerLevel: 1
   towerType: 3
-  towerDescription: 'Increase magic damage.<br>Buff: Mages. '
-  towerCost: 1
-  towerDamage: 3
+  towerDescription: +1 RNG.<br> Boosts all Attacking Towers.
+  towerCost: 12
+  towerDamage: 0
   towerSpeed: 0
   towerBaseSpeed: 0
-  towerRange: 0
+  towerRange: 1
   frz: 0
   psn: 0
   brn: 0
-  towerIcon: {fileID: 21300000, guid: 28e2456900307334e9903ad840eb59fd, type: 3}
-  upgradeTower: {fileID: 11400000, guid: 229d179371478114da469202c52db838, type: 2}
-  upgradeTowerObj: {fileID: 5587037858034042585, guid: 1854b05135579c14897d1b1c62f8ab35,
+  towerIcon: {fileID: 21300000, guid: 3efa7378349b14e4c868c5053be05cca, type: 3}
+  upgradeTower: {fileID: 11400000, guid: 57e92fc19204a7344966587af070dca7, type: 2}
+  upgradeTowerObj: {fileID: 5587037858034042585, guid: 9a14f5678537eb941a237410150e10fe,
     type: 3}
-  upgradeCost: 2
+  upgradeCost: 26

@@ -263,6 +263,7 @@ MonoBehaviour:
   towerRange: 0
   towerDamage: 0
   towerSpeed: 0
+  publicSpeed: 0
   tower_psn: 0
   tower_frz: 0
   tower_brn: 0
@@ -313,6 +314,7 @@ MonoBehaviour:
   buffFrz: 0
   towers: []
   buffFX: {fileID: 6330344791709797029, guid: 8c0457151f196424c9e44c83936773cc, type: 3}
+  buffAOE: 0
 --- !u!95 &7420604322613395446
 Animator:
   serializedVersion: 7
@@ -647,6 +649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468986486831185265, guid: 5913a02756cb0054fa4c8afdfa94b8d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

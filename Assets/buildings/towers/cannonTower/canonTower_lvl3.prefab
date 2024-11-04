@@ -398,6 +398,7 @@ MonoBehaviour:
   towerRange: 0
   towerDamage: 0
   towerSpeed: 0
+  publicSpeed: 0
   tower_psn: 0
   tower_frz: 0
   tower_brn: 0
@@ -448,7 +449,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.015, z: 0.01}
-  m_Center: {x: 0, y: 0.008, z: 0}
+  m_Center: {x: 0, y: 0.004, z: 0}
 --- !u!114 &5592113504052948556
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: manaCrystal
+  m_Name: furnace2
   m_EditorClassIdentifier: 
-  towerName: Mana Crystal
-  towerLevel: 1
+  towerName: Furnace II
+  towerLevel: 2
   towerType: 3
-  towerDescription: 'Increase magic damage.<br>Buff: Mages. '
+  towerDescription: +2 BRN to Marksmen, Artillery and Fire Mages.
   towerCost: 1
-  towerDamage: 3
+  towerDamage: 0
   towerSpeed: 0
   towerBaseSpeed: 0
   towerRange: 0
   frz: 0
   psn: 0
-  brn: 0
-  towerIcon: {fileID: 21300000, guid: 28e2456900307334e9903ad840eb59fd, type: 3}
-  upgradeTower: {fileID: 11400000, guid: 229d179371478114da469202c52db838, type: 2}
-  upgradeTowerObj: {fileID: 5587037858034042585, guid: 1854b05135579c14897d1b1c62f8ab35,
+  brn: 2
+  towerIcon: {fileID: 21300000, guid: f3c4f2a816b649f43b86be622c5111e1, type: 3}
+  upgradeTower: {fileID: 11400000, guid: 70ebf5b779dc50c468639637663ce4ea, type: 2}
+  upgradeTowerObj: {fileID: 5587037858034042585, guid: 3b92c58e0e9efb041ae8a30f38eecc9a,
     type: 3}
   upgradeCost: 2

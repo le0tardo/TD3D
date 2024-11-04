@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: manaCrystal
+  m_Name: manaCrystal2
   m_EditorClassIdentifier: 
   towerName: Mana Crystal
-  towerLevel: 1
+  towerLevel: 2
   towerType: 3
   towerDescription: 'Increase magic damage.<br>Buff: Mages. '
   towerCost: 1
-  towerDamage: 3
+  towerDamage: 5
   towerSpeed: 0
   towerBaseSpeed: 0
   towerRange: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   psn: 0
   brn: 0
   towerIcon: {fileID: 21300000, guid: 28e2456900307334e9903ad840eb59fd, type: 3}
-  upgradeTower: {fileID: 11400000, guid: 229d179371478114da469202c52db838, type: 2}
-  upgradeTowerObj: {fileID: 5587037858034042585, guid: 1854b05135579c14897d1b1c62f8ab35,
+  upgradeTower: {fileID: 11400000, guid: 35507f1c382fb784a99eb0f946e47a62, type: 2}
+  upgradeTowerObj: {fileID: 5587037858034042585, guid: eeb5c5eb73e48894ebbd1a7dec44ecf5,
     type: 3}
   upgradeCost: 2

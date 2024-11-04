@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: furnace_towerScriptableObjectScript
+  m_Name: periscope3
   m_EditorClassIdentifier: 
-  towerName: Furnace
-  towerLevel: 1
+  towerName: Spy Glass
+  towerLevel: 3
   towerType: 3
-  towerDescription: +1 Fire to Marksmen, Artillery and Fire Mages.
-  towerCost: 32
+  towerDescription: +3 RNG.<br> Boosts all Attacking Towers.
+  towerCost: 12
   towerDamage: 0
   towerSpeed: 0
   towerBaseSpeed: 0
-  towerRange: 0
+  towerRange: 3
   frz: 0
   psn: 0
-  brn: 1
-  towerIcon: {fileID: 21300000, guid: f3c4f2a816b649f43b86be622c5111e1, type: 3}
+  brn: 0
+  towerIcon: {fileID: 21300000, guid: 3efa7378349b14e4c868c5053be05cca, type: 3}
   upgradeTower: {fileID: 0}
   upgradeTowerObj: {fileID: 0}
-  upgradeCost: 48
+  upgradeCost: 26

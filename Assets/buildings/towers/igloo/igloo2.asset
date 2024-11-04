@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: manaCrystal
+  m_Name: igloo2
   m_EditorClassIdentifier: 
-  towerName: Mana Crystal
+  towerName: Igloo II
   towerLevel: 1
   towerType: 3
-  towerDescription: 'Increase magic damage.<br>Buff: Mages. '
+  towerDescription: +2 FRZ.<br>Buffs Artillery and Frost Mages.
   towerCost: 1
-  towerDamage: 3
+  towerDamage: 0
   towerSpeed: 0
   towerBaseSpeed: 0
   towerRange: 0
-  frz: 0
+  frz: 2
   psn: 0
   brn: 0
-  towerIcon: {fileID: 21300000, guid: 28e2456900307334e9903ad840eb59fd, type: 3}
-  upgradeTower: {fileID: 11400000, guid: 229d179371478114da469202c52db838, type: 2}
-  upgradeTowerObj: {fileID: 5587037858034042585, guid: 1854b05135579c14897d1b1c62f8ab35,
+  towerIcon: {fileID: 21300000, guid: 9725c0f676a25f24aa71916d5de1b80e, type: 3}
+  upgradeTower: {fileID: 11400000, guid: 7c97c795ecaa9e84b8bc7270f794226f, type: 2}
+  upgradeTowerObj: {fileID: 5587037858034042585, guid: 70254f79e22c46446b232f7aa4e0b86d,
     type: 3}
   upgradeCost: 2
