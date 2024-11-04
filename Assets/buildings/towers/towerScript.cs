@@ -13,6 +13,7 @@ public class towerScript : MonoBehaviour
     public float towerRange;
     public float towerDamage;
     public float towerSpeed;
+    public float publicSpeed;
 
     public float tower_psn;
     public float tower_frz;
@@ -101,6 +102,8 @@ public class towerScript : MonoBehaviour
         tower_frz = towerStatObj.frz;
         tower_psn = towerStatObj.psn;
         tower_brn = towerStatObj.brn;
+
+        publicSpeed = towerStatObj.towerBaseSpeed;
 
         if (towerType != towerType.Gizmo) //gizmos have set range 
         { 

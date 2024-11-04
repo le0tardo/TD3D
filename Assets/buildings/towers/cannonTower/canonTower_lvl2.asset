@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: canonTower_lvl2
   m_EditorClassIdentifier: 
   towerName: Canon
-  towerLevel: 3
+  towerLevel: 2
   towerType: 2
   towerDescription: baller
   towerCost: 38

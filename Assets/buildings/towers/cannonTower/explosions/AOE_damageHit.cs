@@ -8,6 +8,8 @@ public class AOE_damageHit : MonoBehaviour
     towerScript myTwrScr;
     public float radius=1; 
     public float dmg=1;
+    public float brn = 0;
+    public float frz =0;
     public ParticleSystem fireFX;
     public ParticleSystem smokeFX;
 
@@ -33,6 +35,11 @@ public class AOE_damageHit : MonoBehaviour
             {
                 enemy_script enmScr=collider.gameObject.GetComponent<enemy_script>();
                 enmScr.TakeDamage(dmg);
+                
+                if (brn > 0||frz>0)
+                {
+                    enmScr.StatusChange(0,Mathf.RoundToInt(frz),Mathf.RoundToInt(brn));
+                }
             }
         }
         Invoke("Sleep",0.5f);
@@ -42,6 +49,8 @@ public class AOE_damageHit : MonoBehaviour
         myTwrScr = myTower.GetComponent<towerScript>();
         radius = 1+(myTwrScr.towerRange/3);
         dmg = myTwrScr.towerDamage;
+        brn = myTwrScr.tower_brn;
+        frz=myTwrScr.tower_frz;
         fireFX.transform.localScale = new Vector3(radius/4, radius/4, radius/4);
         smokeFX.transform.localScale = new Vector3(radius/4, radius/4, radius/4);
     }

@@ -8,13 +8,15 @@ public class towerInfoBox_script : MonoBehaviour
     public towerScript twrScr;
 
     public TMP_Text towerName;
-    public TMP_Text towerType;
+    public TMP_Text towerType_txt;
     public TMP_Text towerDamage;
     public TMP_Text towerSpeed;
     public TMP_Text towerRange;
     public TMP_Text towerPSN;
     public TMP_Text towerFRZ;
     public TMP_Text towerBRN;
+
+    string classString="a";
 
     private void Update()
     {
@@ -23,10 +25,27 @@ public class towerInfoBox_script : MonoBehaviour
         {
             twrScr=selectedTower.GetComponent<towerScript>();
 
+            switch (twrScr.towerType)
+            {
+                case towerType.Archer:
+                    classString = "Marksman";
+                break;
+                case towerType.Mage:
+                    classString = "Mage";
+                break;
+                case towerType.Gadget:
+                    classString = "Artillery";
+                break;
+                case towerType.Gizmo:
+                    classString = "Booster";
+                break;
+            }
+            
+
             towerName.text = twrScr.towerName;
-            towerType.text = "Class: " + twrScr.towerType+ ".\tLVL: "+twrScr.towerLevel;
+            towerType_txt.text = "Class: " + classString+ ".\t  LVL: " + twrScr.towerLevel;
             towerDamage.text = "Damage:\t " +twrScr.towerDamage;
-            towerSpeed.text = "Speed:\t " +twrScr.towerSpeed;
+            towerSpeed.text = "Speed:\t " +twrScr.publicSpeed;
             towerRange.text = "Range:\t " +twrScr.towerRange;
             towerPSN.text = "PSN:\t" +twrScr.tower_psn;
             towerFRZ.text = "FRZ:\t" +twrScr.tower_frz;

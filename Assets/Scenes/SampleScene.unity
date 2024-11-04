@@ -8435,7 +8435,7 @@ MonoBehaviour:
   selectedTower: {fileID: 0}
   twrScr: {fileID: 0}
   towerName: {fileID: 1428700528}
-  towerType: {fileID: 637794636}
+  towerType_txt: {fileID: 637794636}
   towerDamage: {fileID: 2111885879}
   towerSpeed: {fileID: 28777376}
   towerRange: {fileID: 148103367}
