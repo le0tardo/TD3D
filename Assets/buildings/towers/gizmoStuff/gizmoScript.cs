@@ -5,6 +5,7 @@ public class gizmoScript : MonoBehaviour
 {
 
     public float buffSpeed;
+    public float buffAOEspd;
     public float buffRange;
     public float buffDamage;
     public float buffMagic;
@@ -44,32 +45,29 @@ public class gizmoScript : MonoBehaviour
     {
 
         towerScript towerToBuffScr = towerToBuff.GetComponent<towerScript>();
+
         if (buffSpeed > 0) {
-            if (!buffAOE)
-            {
-                if (towerToBuffScr.towerType == towerType.Archer || towerToBuffScr.towerType == towerType.Mage)
-                {
-                    towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD"; buffAmmount = buffSpeed;
-                }
-                else
-                {
-                    buffString = "";
-                }
+            if (towerToBuffScr.towerType == towerType.Archer || towerToBuffScr.towerType == towerType.Mage)
+            { 
+                towerToBuffScr.towerSpeed += buffSpeed;towerToBuffScr.publicSpeed += buffSpeed; buffString = "SPD";buffAmmount = buffSpeed;
             }
             else
             {
-                if (towerToBuffScr.towerType == towerType.Gadget)
-                {
-                    towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD"; buffAmmount = buffSpeed;
-                }
-                else
-                {
-                    buffString = "";
-                }
+                buffString = "";
             }
-            //towerToBuffScr.towerSpeed += buffSpeed; buffString = "SPD";buffAmmount = buffSpeed;
-        
-        } 
+        }
+        if (buffAOEspd > 0)
+        {
+            if (towerToBuffScr.towerType == towerType.Gadget)
+            {
+                towerToBuffScr.towerSpeed += buffAOEspd;towerToBuffScr.publicSpeed += buffAOEspd; buffString = "SPD"; buffAmmount = buffAOEspd;
+            }
+            else
+            {
+                buffString = "";
+            }
+        }
+
         if (buffRange > 0) { towerToBuffScr.towerRange += buffRange; buffString = "RNG";buffAmmount = buffRange; }
         if (buffPsn > 0) { towerToBuffScr.tower_psn += buffPsn;buffString = "PSN";buffAmmount = buffPsn;}
         
@@ -149,7 +147,20 @@ public class gizmoScript : MonoBehaviour
             { 
                 towerScript towerToBuffScr = tower.GetComponent<towerScript>();
 
-                if (buffSpeed > 0) { towerToBuffScr.towerSpeed -= buffSpeed; }
+                if (buffSpeed > 0) 
+                {
+                    if (towerToBuffScr.towerType == towerType.Archer || towerToBuffScr.towerType == towerType.Mage) 
+                    { 
+                        towerToBuffScr.towerSpeed -= buffSpeed;towerToBuffScr.publicSpeed -= buffSpeed;
+                    }
+                }
+                if (buffAOEspd > 0)
+                {
+                    if (towerToBuffScr.towerType == towerType.Gadget)
+                    {
+                        towerToBuffScr.towerSpeed -= buffAOEspd;towerToBuffScr.publicSpeed-=buffAOEspd;
+                    }
+                }
                 if (buffRange > 0) { towerToBuffScr.towerRange -= buffRange; }
                 if (buffPsn > 0) { towerToBuffScr.tower_psn -= buffPsn; }
                 if (buffBrn > 0) { towerToBuffScr.tower_brn -= buffBrn; towerToBuffScr.tower_frz += buffBrn;}

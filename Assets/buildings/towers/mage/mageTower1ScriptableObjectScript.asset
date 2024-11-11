@@ -19,7 +19,7 @@ MonoBehaviour:
   towerCost: 18
   towerDamage: 10
   towerSpeed: 1
-  towerBaseSpeed: 1
+  towerBaseSpeed: 3
   towerRange: 4
   frz: 0
   psn: 0

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8974814582283454144}
   - component: {fileID: 1957056309237405812}
   m_Layer: 0
-  m_Name: oilBarrel
+  m_Name: oilBarrel3
   m_TagString: towerRayCast
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58502d0ff09007c488e06d043363e0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerStatObj: {fileID: 11400000, guid: 717198470fd7ad24e889367cbf088513, type: 2}
+  towerStatObj: {fileID: 11400000, guid: f599b5ee9e0b5564986a8da44cdbcab9, type: 2}
   towerName: 
   towerType: 3
   towerLevel: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffSpeed: 0
-  buffAOEspd: 1
+  buffAOEspd: 3
   buffRange: 0
   buffDamage: 0
   buffMagic: 0
@@ -372,17 +372,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2bfc3de3517a4ab48895591ee344458e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0066
+      value: 0.0075
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bfc3de3517a4ab48895591ee344458e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0066
+      value: 0.0075
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bfc3de3517a4ab48895591ee344458e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0066
+      value: 0.0075
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bfc3de3517a4ab48895591ee344458e,
         type: 3}
@@ -392,7 +392,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2bfc3de3517a4ab48895591ee344458e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00793
+      value: 0.00903
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bfc3de3517a4ab48895591ee344458e,
         type: 3}

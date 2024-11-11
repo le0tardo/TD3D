@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31ecfaddbdc656a45887f37bed1dde62, type: 3}
-  m_Name: oilBarrel
+  m_Name: oilBarrel3
   m_EditorClassIdentifier: 
   towerName: Oil Barrel
-  towerLevel: 1
+  towerLevel: 3
   towerType: 3
-  towerDescription: 'lubricant. +1 Speed.<br>Boosts Artillery. '
+  towerDescription: 'lubricant. +3 Speed.<br>Boosts Artillery. '
   towerCost: 1
   towerDamage: 0
   towerSpeed: 1
-  towerBaseSpeed: 1
+  towerBaseSpeed: 3
   towerRange: 0
   frz: 0
   psn: 0
   brn: 0
   towerIcon: {fileID: 21300000, guid: 1c20c560fcd1d5e4a909fe5fa7c1dec9, type: 3}
-  upgradeTower: {fileID: 11400000, guid: ec5315650b5e80c4d842a09aac226dfa, type: 2}
-  upgradeTowerObj: {fileID: 5587037858034042585, guid: d30f4c5d9f3c2ce4ea726c01e3c44aaf,
-    type: 3}
+  upgradeTower: {fileID: 0}
+  upgradeTowerObj: {fileID: 0}
   upgradeCost: 2
